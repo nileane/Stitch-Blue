@@ -1,0 +1,26 @@
+<section class="card-bg">
+
+	{{#foreach posts}}
+	<section class="recent card {{post_class}} {{#if @even}}even{{else}}odd{{/if}}">
+		<a href="{{url}}"><h2 class="post-title">{{{title}}}</h2></a>
+		<div class="post-excerpt">
+			<p>{{excerpt words="26"}}…</p>
+		</div>
+		<footer class="post-meta">
+			{{#is "home, paged"}}
+			{{#author}}
+			<a href="{{url}}">
+			{{#if image}}<div class="author-thumb" style="background-image:url({{image}});" alt="Author image" nopin="nopin"></div>{{/if}}
+			<span style="color:rgba(51, 51, 51, 0.8)">{{name}}</span></a> ·
+			{{/author}}
+			{{/is}} 
+			<span>{{date format="DD MMMM YYYY"}}</span>
+            {{#if tags}}
+                · <span style="font-size: 120%; color: rgba(170, 170, 170, 0.8); margin-bottom: -2px; margin-left: 0.5em;" class="oi" data-glyph="tags"></span> <span class="tags">{{tags}}</span>
+            {{/if}}
+		</footer>
+	</section>
+	{{/foreach}}
+
+{{pagination}}
+</section>

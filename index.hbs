@@ -1,0 +1,37 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+    <header class="big {{#if @blog.cover}}cover" style="background-image: url({{@blog.cover}})"{{else}}"{{/if}}>
+	    <h1 style="font-size:2em">
+			<img src="{{asset "img/design/script.png"}}" alt="Logo"> {{@blog.title}} <a class="info" href="/a-propos"><span class="oi" data-glyph="info"></span></a>
+        </h1>
+	    <div class="author-sec">
+            <div class="meta">
+                <div>
+                {{#foreach posts}}
+                    {{#author}}
+                        <a href="{{url}}" style="margin-left:-5px;margin-right: 12px">
+                        {{#if image}}<div class="author-thumb" style="background-image:url({{image}});" alt="Author image" nopin="nopin"></div>{{/if}}
+                        <span style="color:rgba(255, 255, 255, .75)">{{name}}</span></a>
+                    {{/author}}
+                {{/foreach}}
+                <a class="more" href="/a-propos#quietquesommesnous">···</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            var seen = {};
+            $('.meta a').each(function() {
+                var txt = $(this).text();
+                if (seen[txt])
+                    $(this).remove();
+                else
+                    seen[txt] = true;
+            });
+        </script>
+    </header>
+
+    <div id="wrapper">
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}

@@ -1,0 +1,18 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! If we have a tag cover, display that - else blog cover - else nothing }}
+    <header class="big cover" style="background-image: url({{#if tag.image }}{{tag.image}}{{else}}{{#if @blog.cover}}{{@blog.cover}}{{/if}}{{/if}})">
+	    <h1 style="font-style:italic">{{tag.name}}</h1>
+	    <div class="author-sec">
+		{{#if tag.description}}
+		    <div class="author-bio">{{tag.description}}</div>
+		{{/if}}
+            <div class="meta">{{plural pagination.total empty="Aucun article" singular="% article" plural="% articles"}}</div>
+        </div>
+    </header>
+                                                
+                                                
+    <div id="wrapper">
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
