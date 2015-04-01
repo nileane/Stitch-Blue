@@ -1,10 +1,8 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
-
-{{! The big featured header }}
+              
     <header class="big {{#if @blog.cover}}cover" style="background-image: url({{@blog.cover}})"{{else}}"{{/if}}>
-	    <h1 style="font-size:2em">
-			<img src="{{asset "img/design/script.png"}}" alt="Logo"> {{@blog.title}} <a class="info" href="/a-propos"><span class="oi" data-glyph="info"></span></a>
+        <h1 style="font-size:2em">
+            <img src="{{asset "img/design/script.png"}}" alt="Logo"> {{@blog.title}} <a class="info" href="/a-propos"><span class="oi" data-glyph="info"></span></a>
         </h1>
 	    <div class="author-sec">
             <div class="meta">
@@ -20,16 +18,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            var seen = {};
-            $('.meta a').each(function() {
-                var txt = $(this).text();
-                if (seen[txt])
-                    $(this).remove();
-                else
-                    seen[txt] = true;
-            });
-        </script>
     </header>
 
     <div id="wrapper">
