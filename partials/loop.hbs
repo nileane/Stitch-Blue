@@ -1,11 +1,42 @@
 <section class="card-bg">
 
-	{{#foreach posts}}
+{{! Featured posts are displayed first }}
+  {{^is "paged"}}
+    {{#foreach posts}}
+        {{#if featured}}
+        <section class="recent card {{post_class}} {{#if @even}}even{{else}}odd{{/if}}">
+            <span class="featured-label">Sélection <span class="oi" data-glyph="heart"></span></span>
+            <a href="{{url}}">
+                <h2 class="post-title">{{{title}}}</h2>
+                <div class="post-excerpt">
+                    <p>{{excerpt words="36"}}…</p>
+                </div>
+            </a>
+            <footer class="post-meta">
+                {{#author}}
+                <a href="{{url}}">
+                {{#if image}}<div class="author-thumb" style="background-image:url({{image}});" alt="Author image" nopin="nopin"></div>{{/if}}
+                <span style="color:rgba(51, 51, 51, 0.8)">{{name}}</span></a> ·
+                {{/author}}
+                <span>{{date format="DD MMMM YYYY"}}</span>
+                {{#if tags}}
+                <span class="tags"><span class="oi" data-glyph="tags"></span> {{tags}}</span>
+                {{/if}}
+            </footer>
+        </section>
+        {{/if}}
+    {{/foreach}}
+  {{/is}}
+
+  {{#foreach posts}}
+    {{#unless featured}}
 	<section class="recent card {{post_class}} {{#if @even}}even{{else}}odd{{/if}}">
-		<a href="{{url}}"><h2 class="post-title">{{{title}}}</h2></a>
-		<div class="post-excerpt">
-			<p>{{excerpt words="26"}}…</p>
-		</div>
+		<a href="{{url}}">
+            <h2 class="post-title">{{{title}}}</h2>
+            <div class="post-excerpt">
+                <p>{{excerpt words="36"}}…</p>
+            </div>
+        </a>
 		<footer class="post-meta">
 			{{#is "home, paged"}}
 			{{#author}}
@@ -16,11 +47,12 @@
 			{{/is}} 
 			<span>{{date format="DD MMMM YYYY"}}</span>
             {{#if tags}}
-                · <span style="font-size: 120%; color: rgba(170, 170, 170, 0.8); margin-bottom: -2px; margin-left: 0.5em;" class="oi" data-glyph="tags"></span> <span class="tags">{{tags}}</span>
+            <span class="tags"><span class="oi" data-glyph="tags"></span> {{tags}}</span>
             {{/if}}
 		</footer>
 	</section>
-	{{/foreach}}
+    {{/unless}}
+  {{/foreach}}
 
 {{pagination}}
 </section>

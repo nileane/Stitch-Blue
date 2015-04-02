@@ -452,6 +452,7 @@ section.card-bg {
     background: url(/assets/img/design/noise.png) #fff;
     padding: 2.5em 0 !important;
     display: -webkit-flex;
+    display:     -ms-flex;
     display:         flex;
     -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
@@ -461,10 +462,35 @@ section.card {
     box-shadow: none;
     background: none;
     -webkit-flex: 1 1 80%;
-	    flex: 1 1 80%;
+    	    flex: 1 1 80%;
+}
+section.card:first-child {
+    padding-top: 1em;
+}
+section.card:last-child {
+    margin-bottom: 0;
 }
 .card p {
     font-size: 90%;
+}
+.featured-label {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 80%;
+    position: absolute;
+    transform: translate(-130%) rotate(-90deg);
+        -webkit-transform: translate(-130%) rotate(-90deg);
+    transform-origin: right center 0;
+        -webkit-transform-origin: right center 0;
+}
+.featured-label {
+    color: rgba(170, 170, 170, 0.8);
+}
+.featured-label .oi {
+    transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    display: inline-block;
+    color: rgba(51, 51, 51, 0.8);
 }
 .post-meta,
 .meta {
@@ -480,9 +506,17 @@ section.card {
     font-weight: normal;
     font-style: italic;
 }
-section.card .tags {
-    display: inline !important;
+.post-meta .tags .oi {
+    font-size: 120%;
+    color: rgba(170, 170, 170, 0.8);
+    margin-left: 0.5em;
+    float: right;
 }
+section.card .post-meta .tags {
+    display: block;
+    text-align: right;
+}
+
 header.big .tags a {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -515,10 +549,6 @@ header.big .meta {
 .meta.author-list .author-thumb {
     width: 60px;
     height: 60px;
-}
-.recent:not(.cover) .top,
-.archives .top {
-    color: #999;
 }
 body:not(.post) #wrapper > header {
     padding-top: 4em;
@@ -791,6 +821,11 @@ blockquote {
     .home-template header.big .meta > div {
         animation: autoslidel linear 30s infinite;
             -webkit-animation: autoslidel linear 30s infinite;
+    }
+}
+@media (max-width: 500px) {
+    section.card-bg .post-excerpt {
+        display: none;
     }
 }
 @media (max-width: 400px) {
