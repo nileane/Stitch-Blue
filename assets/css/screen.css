@@ -300,8 +300,9 @@ section.card .post-meta .author-thumb {
     width: 2.6em;
     height: 2.6em;
     background-size: cover;
-    border-radius: 50%;
     background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
     transition: all .3s;
 }
 .author-image .img:hover {

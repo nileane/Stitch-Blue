@@ -58,7 +58,7 @@
     {{! Bonus scripts }}
     {{! Nice little script to hide/show top bar on scroll }}<script type="text/javascript" src="{{asset "js/scroll-up-bar.js"}}"></script>
     
-    {{! Hack to display recently active authors }}{{#is 'home'}}<script>
+    {{! Hack to display recently active authors — Only on home page }}{{#is 'home'}}<script>
         var seen = {};
         $('.meta a').each(function() {
             var txt = $(this).text();
