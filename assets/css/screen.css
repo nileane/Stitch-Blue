@@ -506,16 +506,16 @@ section.card:last-child {
     font-weight: normal;
     font-style: italic;
 }
-.post-meta .tags .oi {
+.meta .oi {
     font-size: 120%;
     line-height: 1;
 }
-section.card .post-meta .tags .oi {
+section.card .meta .oi {
     color: rgba(170, 170, 170, 0.8);
     margin-left: 0.5em;
     float: right;
 }
-header.big .post-meta .tags .oi {
+header.big .meta .oi {
     vertical-align: top;
     color: #FFF;
     margin-left: 0.8em;
