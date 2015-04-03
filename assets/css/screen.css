@@ -523,9 +523,6 @@ header.big .tags a {
 header.big .meta {
     margin: 1em 0 0;
 }
-.archive-template header.big .meta {
-    display: none;
-}
 .home-template header.big .meta {
     text-align: center;
 }
@@ -587,7 +584,8 @@ header.big {
     overflow: hidden;
 }
 .home-template header.big,
-.archive-template header.big {
+.archive-template header.big,
+.tag-template header.big {
     text-align: center;
 }
 @media (max-width:767px) {
