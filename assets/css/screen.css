@@ -773,7 +773,6 @@ blockquote {
         left: 0;
         right: 0;
         font-size: 70%;
-            background-color: rgba(0, 0, 0, 0.4);
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 50%, transparent);
         padding: 2em 0 4em;
         margin-bottom: -4em;
