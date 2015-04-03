@@ -4,7 +4,7 @@
 {{! If we have a tag cover, display that - else blog cover - else nothing }}
     <header class="big cover" style="background-image: url({{#if tag.image }}{{tag.image}}{{else}}{{#if @blog.cover}}{{@blog.cover}}{{/if}}{{/if}})">
 	    <h1 style="font-style:italic">{{tag.name}}</h1>
-	    <div class="author-sec">
+	    <div>
 		{{#if tag.description}}
 		    <div class="meta-description">{{tag.description}}</div>
 		{{/if}}
