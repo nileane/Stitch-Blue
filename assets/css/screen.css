@@ -482,19 +482,25 @@ section.card:last-child {
     font-size: 80%;
     margin-top: .5em;
     text-align: left;
+    color: rgba(170, 170, 170, 0.5);
+}
+header .meta {
     color: rgba(255, 255, 255, 0.5);
 }
 .post-meta span,
 .meta span {
     display: inline-block;
 }
-.meta a {
+header .meta a {
     color: rgba(255, 255, 255, 0.7);
 }
 .post-meta .tags a {
     text-transform: none;
     font-weight: normal;
     font-style: italic;
+}
+header .post-meta .tags a {
+    color: rgba(170, 170, 170, 0.5);
 }
 .meta .oi {
     font-size: 120%;
