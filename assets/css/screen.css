@@ -506,7 +506,7 @@ header .post-meta .tags a {
     font-size: 120%;
     line-height: 1;
 }
-section.card .meta .oi {
+section.card .post-meta .oi {
     color: rgba(170, 170, 170, 0.8);
     margin-left: 0.5em;
     float: right;
