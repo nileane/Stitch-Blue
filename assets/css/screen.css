@@ -499,7 +499,7 @@ section.card:last-child {
     font-size: 80%;
     margin-top: .5em;
     text-align: left;
-    color: rgba(170, 170, 170, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 .post-meta .tags a {
     text-transform: none;
@@ -560,7 +560,7 @@ header.big .meta {
     margin: 0 12px 0 -5px;
 }
 .recent-authors > a > span {
-    color: rgba(170, 170, 170, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     transition: all .3s;
         -webkit-transition: all .3s;
 }
@@ -729,6 +729,12 @@ blockquote {
     line-height: 32px;
     vertical-align: middle;
     font-size: 13px;
+}
+.info .oi {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    line-height: inherit;
+    font-size: 100%;
 }
 
 @media screen and (min-width:920px) {
