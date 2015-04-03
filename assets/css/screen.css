@@ -359,9 +359,6 @@ Mobile toggle classes */
     .mobileoff {
         display: none !important;
     }
-    #topbar {
-        padding: 0.5em 10% 0.4em;
-    }
 }
 
 
@@ -817,6 +814,12 @@ blockquote {
 	    width: 16px;
 	    height: auto;
 	}
+  #topbar {
+      padding: 0.5em 10% 0.4em;
+  }
+  #head {
+      padding: 0;
+  }
 	blockquote {
 	    font-size: 120%;
 	}
