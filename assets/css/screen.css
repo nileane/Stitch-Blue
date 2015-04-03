@@ -266,12 +266,6 @@ Head & Navigation */
        -webkit-animation: slider 1.2s 1;
     display: inline-block;
 }
-.author-profile > * {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
 .author-thumb {
     width: 30px;
     height: 30px;
@@ -306,17 +300,6 @@ section.card .post-meta .author-thumb {
 .author-image .img:hover {
     transform: scale(2.1);
 }
-.author-title {
-    vertical-align: middle;
-    margin: .5em 0 -.2em 0;
-    color: rgba(255, 255, 255, .8);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 95%;
-    text-align: left !important;
-}
-.author-bio,
 .meta-description {
     font-style: italic;
     padding: .8em 0;
