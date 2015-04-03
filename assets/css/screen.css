@@ -560,6 +560,8 @@ header.big .meta {
 }
 .recent-authors > a > span {
     color: rgba(170, 170, 170, 0.5);
+    transition: all .3s;
+        -webkit-transition: all .3s;
 }
 .recent-authors > a:hover > span {
     color: #FFF;
