@@ -502,7 +502,8 @@ header .meta a {
 header .post-meta .tags a {
     color: rgba(170, 170, 170, 0.5);
 }
-.meta .oi {
+.meta .oi,
+.post-meta .oi {
     font-size: 120%;
     line-height: 1;
 }
