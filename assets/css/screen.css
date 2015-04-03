@@ -778,12 +778,14 @@ blockquote {
         left: 0;
         right: 0;
         font-size: 70%;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 50%, transparent);
         padding: 2em 0 4em;
         margin-bottom: -4em;
         overflow-x: hidden;
         overflow-y: hidden;
         white-space: nowrap;
+    }
+    header.big.cover .meta {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 50%, transparent);
     }
 }
 @media (max-width: 767px) {
@@ -825,8 +827,10 @@ blockquote {
         margin: 3em -15% -2.5em !important;
         overflow-x: hidden;
         overflow-y: visible;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
         position: relative;
+    }
+    header.big.cover .meta {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
     }
     .recent-authors {
         white-space: nowrap;
