@@ -558,12 +558,14 @@ header.big .meta {
     width: 60px;
     height: 60px;
 }
-body:not(.post) #wrapper > header {
-    padding-top: 4em;
+.recent-authors > a {
+    margin: 0 12px 0 -5px;
 }
-body.left #wrapper > header {
-    padding-top: 1em;
+.recent-authors > a > span {
+    color: rgba(255, 255, 255, .6);
 }
+
+
 header h1,
 section h1 {
     line-height: 1.1;
@@ -826,7 +828,7 @@ blockquote {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 50%, transparent);
         position: relative;
     }
-    .home-template header.big .meta > div {
+    .recent-authors {
         white-space: nowrap;
         animation: autoslidel linear 30s infinite;
             -webkit-animation: autoslidel linear 30s infinite;
