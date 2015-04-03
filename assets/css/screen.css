@@ -510,9 +510,18 @@ section.card:last-child {
 }
 .post-meta .tags .oi {
     font-size: 120%;
+    line-height: 1;
+}
+section.card .post-meta .tags .oi {
     color: rgba(170, 170, 170, 0.8);
     margin-left: 0.5em;
     float: right;
+}
+header.big .post-meta .tags .oi {
+    vertical-align: top;
+    color: #FFF;
+    margin-left: 0.8em;
+    margin-right: 0.2em;
 }
 section.card .post-meta .tags {
     display: block;
@@ -574,11 +583,11 @@ header h1 {
     background-position: center;
     background-color: #323232;
     box-shadow:
-	0 0 0 800px rgba(0, 0, 0, 0.55) inset,
-	inset 0 -1px rgba(0, 0, 0, .2),
-	inset 0 -2px 3px rgba(0, 0, 0, 0.25);
+        0 0 0 800px rgba(0, 0, 0, 0.55) inset,
+        inset 0 -1px rgba(0, 0, 0, .2),
+        inset 0 -2px 3px rgba(0, 0, 0, 0.25);
     transition: box-shadow .3s;
-      -webkit-transition: box-shadow .3s;
+        -webkit-transition: box-shadow .3s;
 }
 header.big {
     padding: 10em 10% 7.5em !important;
@@ -813,12 +822,12 @@ blockquote {
         padding: 1em 15%;
         margin: 3em -15% -2.5em !important;
         overflow-x: hidden;
-        white-space: nowrap;
         overflow-y: visible;
-        background: rgba(0, 0, 0, 0.4);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 50%, transparent);
         position: relative;
     }
     .home-template header.big .meta > div {
+        white-space: nowrap;
         animation: autoslidel linear 30s infinite;
             -webkit-animation: autoslidel linear 30s infinite;
     }
