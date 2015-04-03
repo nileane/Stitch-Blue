@@ -592,7 +592,7 @@ header h1 {
         -webkit-transition: box-shadow .3s;
 }
 header.big {
-    padding: 10em 10% 7.5em !important;
+    padding: 10em 10% 9.5em;
     position: relative;
     overflow: hidden;
 }
@@ -774,9 +774,6 @@ blockquote {
 	    padding-right: 10% !important;
 	    background-color: rgba(0, 0, 0, 0.05);
 	}
-    .home-template header.big {
-        padding-bottom: 10em !important;
-    }
     header.big .meta {
         text-align: center;
         position: absolute;
@@ -835,7 +832,8 @@ blockquote {
     }
 }
 @media (max-width: 500px) {
-    section.card-bg .post-excerpt {
+    section.card-bg .post-excerpt,
+    .featured-label {
         display: none;
     }
 }
