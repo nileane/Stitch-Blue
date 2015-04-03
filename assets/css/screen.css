@@ -16,7 +16,8 @@ select.custom,
 #post ol,
 #post blockquote,
 .post-excerpt,
-.author-bio {
+.author-bio,
+.meta-description {
     font-family: 'Merriweather', "Charis SIL", "Bitstream Charter", Georgia, "Fira Sans", serif;
 }
 
@@ -78,7 +79,7 @@ section.dark {
     margin-left: auto;
     margin-right: auto;
 }
-header.big > *,
+header.big > *:not(.meta),
 header.big + section > * > * {
     max-width: 800px;
     margin-left: auto;
@@ -318,7 +319,8 @@ section.card .post-meta .author-thumb {
     font-size: 95%;
     text-align: left !important;
 }
-.author-bio {
+.author-bio,
+.meta-description {
     font-style: italic;
     padding: .8em 0;
     margin-bottom: -1em;
