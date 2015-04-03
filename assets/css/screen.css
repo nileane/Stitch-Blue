@@ -828,7 +828,7 @@ blockquote {
         margin: 3em -15% -2.5em !important;
         overflow-x: hidden;
         overflow-y: visible;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 50%, transparent);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
         position: relative;
     }
     .recent-authors {
