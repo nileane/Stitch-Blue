@@ -483,7 +483,6 @@ section.card:last-of-type {
     margin-top: .5em;
     text-align: left;
     color: rgba(170, 170, 170, 0.5);
-    letter-spacing: 1px;
 }
 header .meta {
     color: rgba(255, 255, 255, 0.5);
@@ -499,7 +498,6 @@ header .meta a {
     text-transform: none;
     font-weight: normal;
     font-style: italic;
-    letter-spacing: normal;
 }
 header .post-meta .tags a {
     color: rgba(170, 170, 170, 0.5);
