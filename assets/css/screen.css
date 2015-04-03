@@ -785,7 +785,7 @@ blockquote {
         white-space: nowrap;
     }
     header.big.cover .meta {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 50%, transparent);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 50%, transparent);
     }
 }
 @media (max-width: 767px) {
