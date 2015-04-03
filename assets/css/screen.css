@@ -501,6 +501,13 @@ section.card:last-child {
     text-align: left;
     color: rgba(255, 255, 255, 0.5);
 }
+.post-meta span,
+.meta span {
+    display: inline-block;
+}
+.meta a {
+    color: rgba(255, 255, 255, 0.7);
+}
 .post-meta .tags a {
     text-transform: none;
     font-weight: normal;

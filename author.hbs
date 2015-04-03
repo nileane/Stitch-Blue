@@ -16,7 +16,7 @@
 		    <div class="meta-description">{{bio}}</div>
 		{{/if}}
             <div class="meta">
-                {{#if location}}<span class="author-location icon-location"><span class="oi" data-glyph="location"></span> {{location}}</span>{{/if}}
+                {{#if location}}<span class="author-location icon-location"><span class="oi" data-glyph="map-marker"></span> {{location}}</span>{{/if}}
                 {{#if website}}<span class="author-link icon-link"><span class="oi" data-glyph="link-intact"></span> <a href="{{website}}">{{website}}</a></span>{{/if}}
                 <span class="oi" data-glyph="pencil"></span> {{plural ../pagination.total empty='N\'a publié aucun article' singular='% article' plural='% articles'}}
             </div>
