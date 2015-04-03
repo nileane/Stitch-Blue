@@ -841,7 +841,7 @@ blockquote {
 @media (max-width: 500px) {
     section.card-bg .post-excerpt,
     .featured-label,
-    .author-top {
+    #head .author-top {
         display: none;
     }
 }
