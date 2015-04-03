@@ -2,7 +2,7 @@
 
 {{#author}}
     <header class="big cover" style="background-image: url({{#if cover}}{{cover}}{{else}}{{#if @blog.cover}}{{@blog.cover}}{{/if}}{{/if}})">
-	    <h1 style="font-style:italic">
+	    <h1>
             {{#if image}}
             <figure class="author-image">
                 <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
@@ -13,7 +13,7 @@
         </h1>
 	    <div>
 		{{#if bio}}
-		    <div class="meta-description">« {{bio}} »</div>
+		    <div class="meta-description">{{bio}}</div>
 		{{/if}}
             <div class="meta" style="text-align:center">
                 {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
