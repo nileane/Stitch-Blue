@@ -198,9 +198,6 @@ Head & Navigation */
     margin-right: 10px;
     width: 16px;
 }
-.home-template #head > a:nth-child(1) {
-    visibility: hidden;
-}
 #nav {
     display: inline-block;
     position: relative;
