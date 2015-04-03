@@ -693,6 +693,7 @@ blockquote {
 	    flex: 1 1 100%;
     text-align: center;
     padding: 0 10%;
+    color: rgba(170, 170, 170, 0.5);
 }
 .newer-posts {
     float: left;
