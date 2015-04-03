@@ -502,7 +502,7 @@ section.card:last-child {
     color: rgba(170, 170, 170, 0.5);
 }
 .post-meta .tags a {
-    text-transform: lowercase;
+    text-transform: none;
     font-weight: normal;
     font-style: italic;
 }
