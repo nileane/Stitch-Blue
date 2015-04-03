@@ -559,7 +559,10 @@ header.big .meta {
     margin: 0 12px 0 -5px;
 }
 .recent-authors > a > span {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(170, 170, 170, 0.5);
+}
+.recent-authors > a:hover > span {
+    color: #FFF;
 }
 
 
