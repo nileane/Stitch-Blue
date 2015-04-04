@@ -784,6 +784,7 @@ blockquote {
 	    padding-left: 2% !important;
 	    padding-right: 10% !important;
 	    background-color: rgba(0, 0, 0, 0.05);
+        margin-bottom: 1.5em;
 	}
     header.big .meta {
         text-align: center;
