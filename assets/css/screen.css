@@ -491,7 +491,7 @@ header .meta {
 .meta span {
     display: inline-block;
 }
-header .meta a {
+header .meta a:not(.info) {
     color: #4F7ABC;
 }
 .post-meta .tags a {
