@@ -283,14 +283,14 @@ section.card .post-meta .author-thumb {
 }
 .author-image {
     padding: 0;
-    display: inline-block;
+    display: block;
     vertical-align: middle;
-    float: left;
-    margin: -0.3em .5em 0 0;
+    margin: -0.3em 0 0 0;
 }
 .author-image .img {
     width: 1.6em;
     height: 1.6em;
+    margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -577,6 +577,9 @@ header h1 {
     color: #fff;
     margin: 0;
 }
+header.author h1 {
+    font-size: 1.6em;
+}
 
 .cover {
     color: rgba(255, 255, 255, 0.9);
@@ -598,7 +601,8 @@ header.big {
 }
 .home-template header.big,
 .archive-template header.big,
-.tag-template header.big {
+.tag-template header.big,
+header.big.author {
     text-align: center;
 }
 @media (max-width:767px) {
