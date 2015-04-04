@@ -271,6 +271,7 @@ Head & Navigation */
     height: 30px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
     vertical-align: middle;
     border-radius: 50%;
