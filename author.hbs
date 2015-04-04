@@ -16,9 +16,9 @@
 		    <div class="meta-description">{{bio}}</div>
 		{{/if}}
             <div class="meta">
-                {{#if location}}<span class="author-location icon-location"><span class="oi" data-glyph="map-marker"></span> <a title="Voir sur OpenStreetMap" href="http://nominatim.openstreetmap.org/search.php?q={{location}}">{{location}}</a></span>{{/if}}
+                {{#if location}}<span class="author-location icon-location"><a title="Voir sur OpenStreetMap" href="http://nominatim.openstreetmap.org/search.php?q={{location}}"><span class="oi" data-glyph="map-marker"></span> {{location}}</a></span>{{/if}}
                 <span><span class="oi" data-glyph="pencil"></span> {{plural ../pagination.total empty='N\'a publié aucun article' singular='% article' plural='% articles'}}</span>
-                {{#if website}}<span class="author-link icon-link"><span class="oi" data-glyph="link-intact"></span> <a href="{{website}}">{{website}}</a></span>{{/if}}
+                {{#if website}}<span class="author-link icon-link"><a href="{{website}}"><span class="oi" data-glyph="link-intact"></span> {{website}}</a></span>{{/if}}
             </div>
         </div>
     </header>
