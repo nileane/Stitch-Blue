@@ -267,8 +267,8 @@ Head & Navigation */
     display: inline-block;
 }
 .author-thumb {
-    width: 30px;
-    height: 30px;
+    width: 2.1em;
+    height: 2.1em;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -510,8 +510,9 @@ header .post-meta .tags a {
 }
 section.card .post-meta .oi {
     color: rgba(170, 170, 170, 0.8);
-    margin-left: 0.5em;
-    float: right;
+    margin-left: 2.3em;
+    margin-right: .5em;
+    float: left;
 }
 header.big .meta .oi {
     vertical-align: top;
@@ -521,7 +522,6 @@ header.big .meta .oi {
 }
 section.card .post-meta .tags {
     display: block;
-    text-align: right;
 }
 
 header.big .tags a {
