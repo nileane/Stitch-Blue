@@ -66,8 +66,11 @@ section.dark {
     text-align: justify;
     position: relative;
 }
-.post #wrapper {
-    max-width: none;
+.home-template #wrapper,
+.author-template #wrapper,
+.tag-template #wrapper,
+.archive-template #wrapper {
+    max-width: 1200px;
 }
 #wrapper > * {
     padding: 2.5em 10%;
