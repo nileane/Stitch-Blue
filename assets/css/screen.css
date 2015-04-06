@@ -510,8 +510,7 @@ header .post-meta .tags a {
 }
 section.card .post-meta .oi {
     color: rgba(170, 170, 170, 0.8);
-    margin-left: 2.3em;
-    margin-right: .5em;
+    margin: 0 .5em;
     float: left;
 }
 header.big .meta .oi {
@@ -520,10 +519,6 @@ header.big .meta .oi {
     margin-left: 0.8em;
     margin-right: 0.2em;
 }
-section.card .post-meta .tags {
-    display: block;
-}
-
 header.big .tags a {
     color: rgba(255, 255, 255, 0.7);
 }
