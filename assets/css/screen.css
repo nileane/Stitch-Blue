@@ -279,6 +279,10 @@ Head & Navigation */
     margin-right: 7px;
     margin-top: -3px;
 }
+.author-h .author-thumb {
+    width: 1.5em;
+    height: 1.5em;
+}
 section.card .post-meta .author-thumb {
     margin-left: 0;
 }
