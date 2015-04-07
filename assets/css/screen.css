@@ -696,6 +696,8 @@ blockquote {
     font-style: italic;
     position: relative;
     opacity: .8;
+    font-size: 80%;
+    margin-top: 7.5em;
 }
 .footnotes:before {
     content: "Notes";
