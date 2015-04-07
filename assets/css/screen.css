@@ -692,6 +692,23 @@ blockquote {
     text-align: center;
     font-size: 150%;
 }
+.footnotes {
+    font-style: italic;
+    position: relative;
+    opacity: .8;
+}
+.footnotes:before {
+    content: "Notes";
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-style: normal;
+    position: absolute;
+    top: -1.8em;
+}
+.footnotes ol {
+    padding: 0;
+}
 .pagination {
     -webkit-flex: 1 1 100%;
 	    flex: 1 1 100%;
