@@ -572,7 +572,7 @@ header.big .meta {
 .recent-authors > a:hover > span {
     color: #FFF;
 }
-.meta > div {
+.meta > div:not(.recent-authors) {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
