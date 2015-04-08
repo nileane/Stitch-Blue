@@ -686,6 +686,12 @@ img,
 iframe {
     max-width:100%;
 }
+#post img {
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0px auto;
+}
 #post,
 .post-excerpt {
     margin: 0 0 1.4em;
