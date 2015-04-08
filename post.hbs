@@ -10,10 +10,11 @@
             <span class="tags"><span class="oi" data-glyph="tags"></span> {{tags}}</span>
             {{/if}}
             {{#has author="Schoewilliam"}}
-                <a href="https://flattr.com/submit/auto?user_id=Schoewilliam&url={{url absolute='true'}}&title={{title}}&description={{excerpt}}&language=fr_FR&tags={{tags separator=',' autolink='false'}}&hidden=0&category=text">
-                    <img src="{{asset "img/flattr-badge-large.png"}}" \
-         alt="Flattr Button"/>
-                </a>
+                <!-- static flattr button -->
+                  <a href="https://flattr.com/submit/auto?user_id=Schoewilliam&url={{url absolute="true"}}&title={{encode title}}&description={{excerpt}}&language=fr_FR&tags={{tags autolink="false" separator=","}}&hidden=0&category=text">
+                    <img src="{{asset "/img/flattr-badge-large.png"}}" alt="Flattr Button"/>
+                  </a>
+                <!-- end static flattr button -->
             {{/has}}
 		</div>
 </header>
