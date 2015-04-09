@@ -646,15 +646,16 @@ section h1 a:hover {
     text-decoration:underline;
 }
 section h2 {
-    font-size: 200%;
+    font-size: 1.6em;
     text-align: left;
     margin: .8em 0 0;
+    letter-spacing: -2px;
 }
 section h2:not(:first-child) {
     margin: 2em 0 0;
 }
 section h3 {
-    font-size: 180%;
+    font-size: 1.5em;
     margin: 1.7em 0 0;
     letter-spacing: -2px;
     text-align: left;
@@ -853,7 +854,7 @@ blockquote {
 	}
 	header h1,
 	section h1 {
-	    font-size: 1.6em;
+	    font-size: 1.8em;
 	}
 	section.recent h2 {
 	    font-size: 1.6em;
