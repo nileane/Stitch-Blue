@@ -561,18 +561,7 @@ header.big .meta {
     width: 60px;
     height: 60px;
 }
-.recent-authors > a {
-    margin: 0 12px 0 -5px;
-}
-.recent-authors > a > span {
-    color: rgba(255, 255, 255, 0.5);
-    transition: all .3s;
-        -webkit-transition: all .3s;
-}
-.recent-authors > a:hover > span {
-    color: #FFF;
-}
-.meta > div:not(.recent-authors) {
+.meta > div {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
@@ -884,11 +873,6 @@ blockquote {
     header.big.cover .meta {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
     }
-    .recent-authors {
-        white-space: nowrap;
-        animation: autoslidel linear 30s infinite;
-            -webkit-animation: autoslidel linear 30s infinite;
-    }
 }
 @media (max-width: 500px) {
     section.card-bg .post-excerpt,
@@ -932,14 +916,4 @@ blockquote {
 @-webkit-keyframes slidedown {
     0% { -webkit-transform: translate(0, -60px); opacity: 0; }
     100% { -webkit-transform: translate(0, 0); opacity: 1; }
-}
-
-/* Autoslide */
-@keyframes autoslidel {
-    0% { transform: translate(130%, 0); }
-    100% { transform: translate(-230%, 0); }
-}
-@-webkit-keyframes autoslidel {
-    0% { -webkit-transform: translate(130%, 0); }
-    100% { -webkit-transform: translate(130%, 0); }
 }
