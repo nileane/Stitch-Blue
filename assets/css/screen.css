@@ -770,10 +770,10 @@ blockquote {
     font-size: 13px;
 }
 .info .oi {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    line-height: inherit;
+    margin: 0 !important;
+    line-height: 30px;
     font-size: 100%;
+    color: inherit;
 }
 
 @media screen and (min-width:920px) {

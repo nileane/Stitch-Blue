@@ -2,23 +2,11 @@
               
     <header class="big {{#if @blog.cover}}cover" style="background-image: url({{@blog.cover}})"{{else}}"{{/if}}>
         <h1 style="font-size:2em">
-            <img src="{{asset "img/design/script.png"}}" alt="Logo"> {{@blog.title}} <a class="info" href="/a-propos"><span class="oi" data-glyph="info"></span></a>
+            <img src="{{asset "img/design/script.png"}}" alt="Logo"> {{@blog.title}}</a>
         </h1>
         {{#is "home"}}
-	    <div>
-            <div class="meta">
-                <div class="recent-authors">
-                {{#foreach posts}}
-                    {{#author}}
-                        <a href="{{url}}">
-                            {{#if image}}<div class="author-thumb" style="background-image:url({{image}});" alt="Author image" nopin="nopin"></div>{{/if}}
-                            <span>{{name}}</span>
-                        </a>
-                    {{/author}}
-                {{/foreach}}
-                <a class="info" href="/a-propos" style="margin-left:3px"><span class="oi" style="color: inherit" data-glyph="people"></span></a>
-                </div>
-            </div>
+        <div class="meta">
+            Qui et que sommes-nous ? <a class="info" href="/a-propos" style="margin-left:4px"><span class="oi" data-glyph="info"></span></a>
         </div>
         {{/is}}
     </header>
