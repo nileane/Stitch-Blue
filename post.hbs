@@ -10,13 +10,6 @@
                 {{#if tags}}
                 <span class="tags"><span class="oi" data-glyph="tags"></span> {{tags}}</span>
                 {{/if}}
-                {{#has author="Schoewilliam"}}
-                    <!-- static flattr button -->
-                      <a class="flattrbutton" href="https://flattr.com/submit/auto?user_id=Schoewilliam&url={{url absolute="true"}}&title={{encode title}}&description={{excerpt}}&language=fr_FR&tags={{tags autolink="false" separator=","}}">
-                        <img src="{{asset "/img/flattr-badge-large.png"}}" alt="Flattr Button"/>
-                      </a>
-                    <!-- end static flattr button -->
-                {{/has}}
             </div>
 		</div>
 </header>
@@ -25,6 +18,14 @@
 <section class="article {{post_class}}">
 	<div id="post">
 	    {{content}}
+        
+    {{#has author="Schoewilliam"}}
+        <!-- static flattr button -->
+          <a class="flattrbutton" href="https://flattr.com/submit/auto?user_id=Schoewilliam&url={{url absolute="true"}}&title={{encode title}}&description={{excerpt}}&language=fr_FR&tags={{tags autolink="false" separator=","}}">
+            <img src="{{asset "/img/flattr-badge-large.png"}}" alt="Flattr Button">
+          </a>
+        <!-- end static flattr button -->
+    {{/has}}
 	</div>
 </section>
 
