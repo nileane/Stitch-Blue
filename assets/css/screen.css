@@ -182,7 +182,7 @@ Head & Navigation */
     text-transform: uppercase;
     display: inline-block;
     font-size: 80%;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 1;
 }
 #head span.note {
@@ -659,7 +659,7 @@ section h3 {
 
 .home-head {
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1.5em;
 }
 
