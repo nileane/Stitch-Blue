@@ -270,8 +270,8 @@ Head & Navigation */
     display: inline-block;
 }
 .author-thumb {
-    width: 2.1em;
-    height: 2.1em;
+    width: 2em;
+    height: 2em;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
