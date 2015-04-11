@@ -662,8 +662,8 @@ section h3 {
 }
 
 .home-head {
-    text-transform: uppercase;
-    font-size: 1.5em;
+    font-variant: small-caps;
+    font-size: 2em;
 }
 
 
@@ -896,7 +896,8 @@ blockquote {
 @media (max-width: 500px) {
     section.card-bg .post-excerpt,
     .featured-label,
-    #head .author-top {
+    #head .author-top,
+    .home-template header .meta .small {
         display: none;
     }
 }
