@@ -1,7 +1,7 @@
 {{!< default}}
 
 {{#author}}
-    <header class="big cover author" style="background-image: url({{#if cover}}{{cover}}{{else}}{{#if @blog.cover}}{{@blog.cover}}{{/if}}{{/if}})">
+    <header class="big author {{#if cover}}cover" style="background-image: url({{cover}});"{{else}}no-cover"{{/if}}>
 	    <h1>
             {{#if image}}
             <figure class="author-image">

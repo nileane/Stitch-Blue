@@ -602,6 +602,9 @@ header.big {
     position: relative;
     overflow: hidden;
 }
+header.big.no-cover {
+    padding: 10em 10% 6.5em;
+}
 .home-template header.big,
 .archive-template header.big,
 .tag-template header.big,

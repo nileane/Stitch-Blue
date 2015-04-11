@@ -1,6 +1,6 @@
 {{!< default}}
               
-    <header class="big {{#if @blog.cover}}cover" style="background-image: url({{@blog.cover}})"{{else}}"{{/if}}>
+    <header class="big {{#if @blog.cover}}cover" style="background-image: url({{@blog.cover}})"{{else}}no-cover"{{/if}}>
         <h1 style="font-size:2em">
             <img src="{{asset "img/design/script.png"}}" alt="Logo"> {{@blog.title}}</a>
         </h1>
