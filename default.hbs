@@ -24,10 +24,12 @@
 <body class="{{body_class}}">
 	<div id="topbar" class="nav">
 		<div id="head">
+            {{^is "home"}}
 		    <a href="/">
                 <img src="{{asset "img/design/script.png"}}" alt="Logo">
                 <span class="nav-head"{{#is "post"}}{{#if post.author}} style="display:none"{{/if}}{{/is}}>{{@blog.title}}</span>
 		    </a>
+            {{/is}}
 		{{#is "post"}}
 		{{#post}}
 		    {{#author}}

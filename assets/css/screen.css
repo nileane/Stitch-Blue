@@ -199,6 +199,7 @@ Head & Navigation */
 #head > a > img {
     vertical-align: middle;
     width: 16px;
+    margin-right: .2em;
 }
 #nav {
     display: inline-block;
