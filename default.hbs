@@ -26,7 +26,7 @@
 		<div id="head">
 		    <a href="/">
                 <img src="{{asset "img/design/script.png"}}" alt="Logo">
-                <span{{#is "post"}}{{#if post.author}} style="display:none"{{/if}}{{/is}}>{{@blog.title}}</span>
+                <span class="nav-head"{{#is "post"}}{{#if post.author}} style="display:none"{{/if}}{{/is}}>{{@blog.title}}</span>
 		    </a>
 		{{#is "post"}}
 		{{#post}}

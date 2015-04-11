@@ -179,11 +179,11 @@ Head & Navigation */
     margin: 0;
     padding: 1em 0;
     color: #fff;
-    letter-spacing: 1px;
     text-transform: uppercase;
     display: inline-block;
-    font-size: 70%;
-    font-weight: 800;
+    font-size: 80%;
+    font-weight: 900;
+    line-height: 1;
 }
 #head span.note {
     padding: 0;
@@ -198,7 +198,6 @@ Head & Navigation */
 }
 #head > a > img {
     vertical-align: middle;
-    margin-right: 10px;
     width: 16px;
 }
 #nav {
@@ -505,6 +504,12 @@ header .meta {
 .meta span {
     display: inline-block;
 }
+.meta .small {
+    text-transform: none;
+    font-weight: normal;
+    font-style: italic;
+    color: #fff;
+}
 header .meta a:not(.info) {
     color: #4F7ABC;
 }
@@ -651,6 +656,13 @@ section h3 {
     margin: 1.7em 0 0;
     text-align: left;
 }
+
+.home-head {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
 
 pre:hover {
     overflow-x: auto;

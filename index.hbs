@@ -1,12 +1,12 @@
 {{!< default}}
               
     <header class="big {{#if @blog.cover}}cover" style="background-image: url({{@blog.cover}})"{{else}}no-cover"{{/if}}>
-        <h1 style="font-size:2em">
+        <h1 class="home-head">
             <img src="{{asset "img/design/script.png"}}" alt="Logo"> {{@blog.title}}</a>
         </h1>
         {{#is "home"}}
         <div class="meta">
-            Qui et que sommes-nous ? <a class="info" href="/a-propos" style="margin-left:3px"><span class="oi" data-glyph="info"></span></a>
+            <span class="small">Un simple carnet de carnets entre amis</span> <a class="info" href="/a-propos" style="margin-left:1em"><span class="oi" data-glyph="info"></span></a>
         </div>
         {{/is}}
     </header>
