@@ -608,8 +608,11 @@ header.big {
     position: relative;
     overflow: hidden;
 }
-header.big.no-cover {
+header.big.shrunk {
     padding: 10em 10% 6.5em;
+}
+header.big.default-cover {
+    background-image: url(/assets/img/design/blackdiamonds.png);
 }
 .home-template header.big,
 .archive-template header.big,
