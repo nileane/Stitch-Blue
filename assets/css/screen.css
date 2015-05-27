@@ -24,7 +24,9 @@ select.custom,
 /* ----------------------------------------
 General & Presets */
 body {
-    font: 20px/1.5 "Fira Sans", "Droid Sans", "Open Sans", Verdana, arial, sans-serif;
+    font-family: "Fira Sans", "Droid Sans", "Open Sans", Verdana, arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
     background: url(/assets/img/design/noise.png) repeat #18223A;
     color: rgba(0, 0, 0, 0.8);
     margin: 0;
