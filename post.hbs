@@ -2,7 +2,11 @@
 
 {{#post}}
 
-<header class="big cover {{#if image}}" style="background-image: url({{image}})"{{else}}shrunk default-cover"{{/if}}>
+{{#if image}}
+    <header class="big cover" style="background-image: url({{image}})">
+{{else}}
+    <header class="big cover shrunk default-cover">
+{{/if}}
 	<h1 class="post-title" style="text-align:left">{{title}}</h1>
 		<div class="post-meta meta">
             <div>
