@@ -276,8 +276,8 @@ Head & Navigation */
 }
 
 .author-h {
-    animation: slider .8s 1;
-       -webkit-animation: slider 1.2s 1;
+    -webkit-animation: slider 1.2s 1;
+            animation: slider .8s 1;
     display: inline-block;
 }
 .author-thumb {
@@ -464,20 +464,20 @@ section.card-bg {
     padding: 2.5em 0 !important;
     display: -webkit-flex;
     display:     -ms-flex;
-    display:         -webkit-box;
-    display:         -ms-flexbox;
+    display:  -webkit-box;
+    display:  -ms-flexbox;
     display:         flex;
     -webkit-flex-flow: row wrap;
-            -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
 }
 section.card {
     padding: 1.9em 10%;
     box-shadow: none;
     background: none;
+    -webkit-box-flex: 1;
     -webkit-flex: 1 1 80%;
-    	    -webkit-box-flex: 1;
-    	        -ms-flex: 1 1 80%;
+        -ms-flex: 1 1 80%;
             flex: 1 1 80%;
 }
 section.card:first-child {
@@ -494,20 +494,20 @@ section.card:last-of-type {
     font-weight: 800;
     font-size: 80%;
     position: absolute;
-    -ms-transform: translate(-130%) rotate(-90deg);
-        transform: translate(-130%) rotate(-90deg);
-        -webkit-transform: translate(-130%) rotate(-90deg);
-    -ms-transform-origin: right center 0;
-        transform-origin: right center 0;
-        -webkit-transform-origin: right center 0;
+        -ms-transform: translate(-130%) rotate(-90deg);
+    -webkit-transform: translate(-130%) rotate(-90deg);
+            transform: translate(-130%) rotate(-90deg);
+        -ms-transform-origin: right center 0;
+    -webkit-transform-origin: right center 0;
+            transform-origin: right center 0;
 }
 .featured-label {
     color: rgba(170, 170, 170, 0.8);
 }
 .featured-label .oi {
-    -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     display: inline-block;
     color: rgba(51, 51, 51, 0.8);
 }
@@ -832,16 +832,16 @@ blockquote {
 	}
     section.page,
     section.card-bg {
-        animation: slideup .8s 1;
-           -webkit-animation: slideup 1.2s 1;
+        -webkit-animation: slideup 1.2s 1;
+                animation: slideup .8s 1;
     }
 	section.recent:nth-child(2),
 	section.recent:nth-child(5),
 	section.recent:nth-child(9) {
 	    font-size: 75%;
 	    -webkit-flex: 1 1 37%;
-		    -webkit-box-flex: 1;
-		        -ms-flex: 1 1 37%;
+        -webkit-box-flex: 1;
+		    -ms-flex: 1 1 37%;
 	            flex: 1 1 37%;
 	    padding-left: 10% !important;
 	    padding-right: 2% !important;
@@ -851,8 +851,8 @@ blockquote {
 	section.recent:nth-child(6),
 	section.recent:nth-child(10) {
 	    -webkit-flex: 1 1 37%;
-		    -webkit-box-flex: 1;
-		        -ms-flex: 1 1 37%;
+          -webkit-box-flex: 1;
+		    -ms-flex: 1 1 37%;
 	            flex: 1 1 37%;
 	    font-size: 75%;
 	    padding-left: 2% !important;
@@ -942,8 +942,8 @@ blockquote {
 
 /* Slide upward */
 @keyframes slideup {
-    0% { -webkit-transform: translate(0, 60px); transform: translate(0, 60px); opacity: 0; }
-    100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1; }
+    0% { transform: translate(0, 60px); opacity: 0; }
+    100% { transform: translate(0, 0); opacity: 1; }
 }
 @-webkit-keyframes slideup {
     0% { -webkit-transform: translate(0, 60px); opacity: 0; }
@@ -951,8 +951,8 @@ blockquote {
 }
 /* Slide rightward */
 @keyframes slider {
-    0% { -webkit-transform: translate(-60px, 0); transform: translate(-60px, 0); opacity: 0; }
-    100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1; }
+    0% { transform: translate(-60px, 0); opacity: 0; }
+    100% { transform: translate(0, 0); opacity: 1; }
 }
 @-webkit-keyframes slider {
     0% { -webkit-transform: translate(-60px, 0); opacity: 0; }
@@ -961,8 +961,8 @@ blockquote {
 
 /* Slide downward */
 @keyframes slidedown {
-    0% { -webkit-transform: translate(0, -60px); transform: translate(0, -60px); opacity: 0; }
-    100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1; }
+    0% { transform: translate(0, -60px); opacity: 0; }
+    100% { transform: translate(0, 0); opacity: 1; }
 }
 @-webkit-keyframes slidedown {
     0% { -webkit-transform: translate(0, -60px); opacity: 0; }
