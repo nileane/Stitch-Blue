@@ -610,6 +610,9 @@ header h1 {
 }
 header.author h1 {
     font-size: 1.6em;
+    font-variant: small-caps;
+    font-weight: 500;
+    text-transform: lowercase;
 }
 
 .cover {
