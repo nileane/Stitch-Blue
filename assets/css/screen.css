@@ -50,14 +50,12 @@ li {
 #nav a,
 #nav span.subnav-title,
 #readnext a,
-#foot a,
 section.dark {
     color: rgba(255, 255, 255, .6);
 }
 #nav a:hover,
 #nav span.subnav-title:hover,
-#readnext a:hover,
-#foot a:hover {
+#readnext a:hover {
     color: rgba(255, 255, 255, .9);
 }
 #post a:hover {
@@ -161,7 +159,8 @@ Head & Navigation */
 }
 #foot {
     display: block;
-    font-size: 60%;
+    font-size: 70%;
+    color: #777;
     padding: 2em 2em 1em;
     text-align: center;
 }
