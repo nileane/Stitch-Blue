@@ -2,7 +2,7 @@
 
 {{#post}}
 
-<header class="big {{#if image}}cover" style="background-image: url({{image}})"{{else}}shrunk"{{/if}}>
+<header class="big cover {{#if image}}" style="background-image: url({{image}})"{{else}}shrunk default-cover"{{/if}}>
 	<h1 class="post-title" style="text-align:left">{{title}}</h1>
 		<div class="post-meta meta">
             <div>
@@ -18,14 +18,6 @@
 <section class="article {{post_class}}">
 	<div id="post">
 	    {{content}}
-        
-    {{#has author="Schoewilliam"}}
-        <!-- static flattr button -->
-          <a class="flattrbutton" href="https://flattr.com/submit/auto?user_id=Schoewilliam&url={{url absolute="true"}}&title={{encode title}}&description={{excerpt}}&language=fr_FR&tags={{tags autolink="false" separator=","}}">
-            <img src="{{asset "/img/flattr-badge-large.png"}}" alt="Flattr Button">
-          </a>
-        <!-- end static flattr button -->
-    {{/has}}
 	</div>
 </section>
 

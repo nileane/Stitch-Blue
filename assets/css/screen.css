@@ -27,13 +27,14 @@ body {
     font-family: "Fira Sans", "Droid Sans", "Open Sans", Verdana, arial, sans-serif;
     font-size: 20px;
     line-height: 1.5;
-    background: url(/assets/img/design/noise.png) repeat #18223A;
+    background: url(/assets/img/design/noise.png) repeat #E0E0E0;
     color: rgba(0, 0, 0, 0.8);
     margin: 0;
 }
 a {
     color: #346EC5;
-    transition: all .2s;
+    -webkit-transition: all .2s;
+            transition: all .2s;
     cursor: pointer;
     text-decoration: none;
 }
@@ -171,7 +172,8 @@ Head & Navigation */
         top: 0;
     z-index: 2;
     padding: 0.5em 0.6em 0.4em;
-    transition: background-color .3s;
+    -webkit-transition: background-color .3s;
+            transition: background-color .3s;
 }
 #topbar.scrolled {
     background-color: rgba(24, 34, 58, 0.9);
@@ -196,7 +198,9 @@ Head & Navigation */
     text-transform: lowercase;
     font-style: italic;
     opacity: 0.5;
-    transform: translate(31px, -2.2em);
+    -webkit-transform: translate(31px, -2.2em);
+        -ms-transform: translate(31px, -2.2em);
+            transform: translate(31px, -2.2em);
 }
 #head > a > img {
     vertical-align: middle;
@@ -241,9 +245,12 @@ Head & Navigation */
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    transform: translate(0, -20px);
+    -webkit-transform: translate(0, -20px);
+        -ms-transform: translate(0, -20px);
+            transform: translate(0, -20px);
     opacity: 0;
-    transition: all .3s;
+    -webkit-transition: all .3s;
+            transition: all .3s;
     overflow: hidden;
     pointer-events: none;
 }
@@ -256,7 +263,9 @@ Head & Navigation */
 }
 #nav .subnav-title:hover .subnav {
     opacity: 1;
-    transform: translate(0);
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
     pointer-events: all;
 }
 #nav .subnav a {
@@ -267,8 +276,8 @@ Head & Navigation */
 }
 
 .author-h {
-    animation: slider .8s 1;
-       -webkit-animation: slider 1.2s 1;
+    -webkit-animation: slider 1.2s 1;
+            animation: slider .8s 1;
     display: inline-block;
 }
 .author-thumb {
@@ -305,10 +314,13 @@ section.card .post-meta .author-thumb {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    transition: all .3s;
+    -webkit-transition: all .3s;
+            transition: all .3s;
 }
 .author-image .img:hover {
-    transform: scale(2.1);
+    -webkit-transform: scale(2.1);
+        -ms-transform: scale(2.1);
+            transform: scale(2.1);
 }
 .meta-description {
     font-style: italic;
@@ -452,16 +464,21 @@ section.card-bg {
     padding: 2.5em 0 !important;
     display: -webkit-flex;
     display:     -ms-flex;
+    display:  -webkit-box;
+    display:  -ms-flexbox;
     display:         flex;
     -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
             flex-flow: row wrap;
 }
 section.card {
     padding: 1.9em 10%;
     box-shadow: none;
     background: none;
+    -webkit-box-flex: 1;
     -webkit-flex: 1 1 80%;
-    	    flex: 1 1 80%;
+        -ms-flex: 1 1 80%;
+            flex: 1 1 80%;
 }
 section.card:first-child {
     padding-top: 1em;
@@ -477,17 +494,20 @@ section.card:last-of-type {
     font-weight: 800;
     font-size: 80%;
     position: absolute;
-    transform: translate(-130%) rotate(-90deg);
-        -webkit-transform: translate(-130%) rotate(-90deg);
-    transform-origin: right center 0;
-        -webkit-transform-origin: right center 0;
+        -ms-transform: translate(-130%) rotate(-90deg);
+    -webkit-transform: translate(-130%) rotate(-90deg);
+            transform: translate(-130%) rotate(-90deg);
+        -ms-transform-origin: right center 0;
+    -webkit-transform-origin: right center 0;
+            transform-origin: right center 0;
 }
 .featured-label {
     color: rgba(170, 170, 170, 0.8);
 }
 .featured-label .oi {
-    transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     display: inline-block;
     color: rgba(51, 51, 51, 0.8);
 }
@@ -614,7 +634,8 @@ header.big.shrunk {
     padding: 10em 10% 6.5em;
 }
 header.big.default-cover {
-    background-image: url(/assets/img/design/blackdiamonds.png);
+    background: url(/assets/img/design/noise.png) repeat center / auto #18223A;
+    box-shadow: none;
 }
 .home-template header.big,
 .archive-template header.big,
@@ -738,7 +759,9 @@ blockquote {
 }
 .pagination {
     -webkit-flex: 1 1 100%;
-	    flex: 1 1 100%;
+	    -webkit-box-flex: 1;
+	        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     text-align: center;
     padding: 0 10%;
     color: rgba(170, 170, 170, 0.5);
@@ -809,15 +832,17 @@ blockquote {
 	}
     section.page,
     section.card-bg {
-        animation: slideup .8s 1;
-           -webkit-animation: slideup 1.2s 1;
+        -webkit-animation: slideup 1.2s 1;
+                animation: slideup .8s 1;
     }
 	section.recent:nth-child(2),
 	section.recent:nth-child(5),
 	section.recent:nth-child(9) {
 	    font-size: 75%;
 	    -webkit-flex: 1 1 37%;
-		    flex: 1 1 37%;
+        -webkit-box-flex: 1;
+		    -ms-flex: 1 1 37%;
+	            flex: 1 1 37%;
 	    padding-left: 10% !important;
 	    padding-right: 2% !important;
 	    background-color: rgba(0, 0, 0, 0.05);
@@ -826,7 +851,9 @@ blockquote {
 	section.recent:nth-child(6),
 	section.recent:nth-child(10) {
 	    -webkit-flex: 1 1 37%;
-		    flex: 1 1 37%;
+          -webkit-box-flex: 1;
+		    -ms-flex: 1 1 37%;
+	            flex: 1 1 37%;
 	    font-size: 75%;
 	    padding-left: 2% !important;
 	    padding-right: 10% !important;
@@ -847,6 +874,7 @@ blockquote {
         white-space: nowrap;
     }
     header.big.cover .meta {
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 50%, transparent);
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 50%, transparent);
     }
 }
@@ -892,6 +920,7 @@ blockquote {
         position: relative;
     }
     header.big.cover .meta {
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), transparent);
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
     }
 }
