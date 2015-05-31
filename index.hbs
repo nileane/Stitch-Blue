@@ -1,8 +1,16 @@
 {{!< default}}
               
-    <header class="big shrunk {{#if @blog.cover}}cover" style="background-image: url({{@blog.cover}})"{{else}}cover default-cover"{{/if}}>
+{{#if @blog.cover}}
+    <header class="big shrunk cover" style="background-image: url({{@blog.cover}})">
+{{else}}
+    <header class="big cover shrunk default-cover">
+{{/if}}
         <h1 class="home-head">
-            <img src="{{asset "img/design/script.png"}}" alt="Logo"> {{@blog.title}}</a>
+            {{#if @blog.logo}}
+                <img class="logo" src="{{@blog.logo}}" alt="logo">
+            {{/if}}
+
+            {{@blog.title}}
         </h1>
         <div class="meta">
             {{#if @blog.description}}<span class="small">{{@blog.description}}</span>{{/if}}

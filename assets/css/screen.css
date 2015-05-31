@@ -201,11 +201,6 @@ Head & Navigation */
         -ms-transform: translate(31px, -2.2em);
             transform: translate(31px, -2.2em);
 }
-#head > a > img {
-    vertical-align: middle;
-    width: 16px;
-    margin-right: .2em;
-}
 #nav {
     display: inline-block;
     position: relative;
@@ -292,10 +287,6 @@ Head & Navigation */
     margin-right: 7px;
     margin-top: -3px;
 }
-.author-h .author-thumb {
-    width: 1.5em;
-    height: 1.5em;
-}
 section.card .post-meta .author-thumb {
     margin-left: 0;
 }
@@ -329,6 +320,20 @@ section.card .post-meta .author-thumb {
     color: rgba(255, 255, 255, .8);
     clear: left;
 }
+.logo {
+    vertical-align: middle;
+    max-width: 85px;
+    height: auto;
+}
+.home-head .logo {
+    display: block;
+    margin: 0 auto .2em;
+}
+#head .logo {
+    vertical-align: middle;
+    max-width: 38px;
+    margin-right: .2em;
+}
 .author-meta {
     font-size: 80%;
     text-transform: uppercase;
@@ -347,12 +352,6 @@ section.card .post-meta .author-thumb {
 }
 .hidden {
     visibility: hidden;
-}
-.flattrbutton {
-    line-height: 0.5;
-    vertical-align: middle;
-    display: block;
-    margin: 0 auto;
 }
 
 
@@ -613,7 +612,6 @@ header.author h1 {
     font-weight: 500;
     text-transform: lowercase;
 }
-
 .cover {
     color: rgba(255, 255, 255, 0.9);
     background-size: cover;
@@ -684,11 +682,6 @@ section h3 {
     font-size: 1.5em;
     margin: 1.7em 0 0;
     text-align: left;
-}
-
-.home-head {
-    font-variant: small-caps;
-    font-size: 2em;
 }
 
 

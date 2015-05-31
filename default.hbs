@@ -12,8 +12,6 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="{{asset "img/design/fav-16.png"}}">
-
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}">
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize-opentype.css"}}">
@@ -28,20 +26,12 @@
 		<div id="head">
             {{^is "home"}}
 		    <a href="/">
-                <img src="{{asset "img/design/script.png"}}" alt="Logo">
-                <span class="nav-head"{{#is "post"}}{{#if post.author}} style="display:none"{{/if}}{{/is}}>{{@blog.title}}</span>
+               {{#if @blog.logo}}
+                <img class="logo" src="{{@blog.logo}}" alt="Logo">
+               {{/if}}
+                <span class="nav-head">{{@blog.title}}</span>
 		    </a>
             {{/is}}
-		{{#is "post"}}
-		{{#post}}
-		    {{#author}}
-		    <a class="author-h" href="{{url}}">
-                <span style="opacity:.2">/</span> 
-                <div class="author-thumb" style="background-image:url({{image}});"></div>
-                <span class="author-top">{{name}}</span>
-		    </a>{{/author}}
-		{{/post}}
-		{{/is}}
 		</div>
 		{{ navigation }}  
 	</div>
