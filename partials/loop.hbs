@@ -9,7 +9,11 @@
             <a href="{{url}}">
                 <h2 class="post-title">{{{title}}}</h2>
                 <div class="post-excerpt">
-                    <p>{{excerpt words="36"}}…</p>
+                    {{#if meta_description}}
+                        <p>{{meta_description}}…</p>
+                    {{else}}
+                        <p>{{excerpt words="36"}}…</p>
+                    {{/if}}
                 </div>
             </a>
             <footer class="post-meta">
@@ -34,7 +38,11 @@
 		<a href="{{url}}">
             <h2 class="post-title">{{{title}}}</h2>
             <div class="post-excerpt">
-                <p>{{excerpt words="36"}}…</p>
+                {{#if meta_description}}
+                    <p>{{meta_description}}…</p>
+                {{else}}
+                    <p>{{excerpt words="36"}}…</p>
+                {{/if}}
             </div>
         </a>
 		<footer class="post-meta">
