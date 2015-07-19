@@ -3,6 +3,7 @@ Fonts */
 @import url('/assets/fonts/Fira/fira.css');
 @import url('/assets/fonts/Merriweather/merriweather.css');
 @import url('/assets/fonts/openiconic/css/open-iconic.css');
+@import url('/assets/fonts/charissil/charissil.css');
 input,
 textarea,
 .top,
@@ -18,7 +19,7 @@ select.custom,
 .post-excerpt,
 .author-bio,
 .meta-description {
-    font-family: 'Merriweather', "Charis SIL", "Bitstream Charter", Georgia, "Fira Sans", serif;
+    font-family: "Merriweather", "Charis SIL", "Bitstream Charter", Georgia, "Fira Sans", serif;
 }
 
 /* ----------------------------------------
