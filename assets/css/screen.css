@@ -461,11 +461,11 @@ section.dark strong {
 section.card-bg {
     background: url(/assets/img/design/noise.png) #fff;
     padding: 2.5em 0 !important;
-    display: -webkit-flex;
-    display:     -ms-flex;
     display:  -webkit-box;
     display:     -moz-box;
     display:  -ms-flexbox;
+    display: -webkit-flex;
+    display:     -ms-flex;
     display:         flex;
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
@@ -475,8 +475,9 @@ section.card {
     padding: 1.9em 10%;
     box-shadow: none;
     background: none;
-    -webkit-box-flex: 1;
-       -moz-box-flex: 1;
+      -webkit-box-flex: 1;
+         -moz-box-flex: 1;
+               width: 80%;
     -webkit-flex: 1 1 80%;
         -ms-flex: 1 1 80%;
             flex: 1 1 80%;
@@ -756,11 +757,12 @@ blockquote {
     padding: 0;
 }
 .pagination {
-    -webkit-flex: 1 1 100%;
-	    -webkit-box-flex: 1;
-               -moz-box-flex: 1;
-	        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+            width: 100%;
+ -webkit-flex: 1 1 100%;
+     -ms-flex: 1 1 100%;
+         flex: 1 1 100%;
     text-align: center;
     padding: 0 10%;
     color: rgba(170, 170, 170, 0.5);
@@ -838,11 +840,12 @@ blockquote {
 	section.recent:nth-child(5),
 	section.recent:nth-child(9) {
 	    font-size: 75%;
-	    -webkit-flex: 1 1 37%;
-        -webkit-box-flex: 1;
-           -moz-box-flex: 1;
-		    -ms-flex: 1 1 37%;
-	            flex: 1 1 37%;
+          -webkit-box-flex: 1;
+             -moz-box-flex: 1;
+                   width: 37%;
+        -webkit-flex: 1 1 37%;
+	    -ms-flex: 1 1 37%;
+	        flex: 1 1 37%;
 	    padding-left: 10% !important;
 	    padding-right: 2% !important;
 	    background-color: rgba(0, 0, 0, 0.05);
@@ -850,11 +853,12 @@ blockquote {
 	section.recent:nth-child(3),
 	section.recent:nth-child(6),
 	section.recent:nth-child(10) {
-	    -webkit-flex: 1 1 37%;
           -webkit-box-flex: 1;
              -moz-box-flex: 1;
-		    -ms-flex: 1 1 37%;
-	            flex: 1 1 37%;
+                   width: 37%;
+        -webkit-flex: 1 1 37%;
+            -ms-flex: 1 1 37%;
+	        flex: 1 1 37%;
 	    font-size: 75%;
 	    padding-left: 2% !important;
 	    padding-right: 10% !important;
