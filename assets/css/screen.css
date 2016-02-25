@@ -464,6 +464,7 @@ section.card-bg {
     display: -webkit-flex;
     display:     -ms-flex;
     display:  -webkit-box;
+    display:     -moz-box;
     display:  -ms-flexbox;
     display:         flex;
     -webkit-flex-flow: row wrap;
@@ -475,6 +476,7 @@ section.card {
     box-shadow: none;
     background: none;
     -webkit-box-flex: 1;
+       -moz-box-flex: 1;
     -webkit-flex: 1 1 80%;
         -ms-flex: 1 1 80%;
             flex: 1 1 80%;
@@ -756,6 +758,7 @@ blockquote {
 .pagination {
     -webkit-flex: 1 1 100%;
 	    -webkit-box-flex: 1;
+               -moz-box-flex: 1;
 	        -ms-flex: 1 1 100%;
             flex: 1 1 100%;
     text-align: center;
@@ -837,6 +840,7 @@ blockquote {
 	    font-size: 75%;
 	    -webkit-flex: 1 1 37%;
         -webkit-box-flex: 1;
+           -moz-box-flex: 1;
 		    -ms-flex: 1 1 37%;
 	            flex: 1 1 37%;
 	    padding-left: 10% !important;
@@ -848,6 +852,7 @@ blockquote {
 	section.recent:nth-child(10) {
 	    -webkit-flex: 1 1 37%;
           -webkit-box-flex: 1;
+             -moz-box-flex: 1;
 		    -ms-flex: 1 1 37%;
 	            flex: 1 1 37%;
 	    font-size: 75%;
