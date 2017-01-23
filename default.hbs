@@ -19,7 +19,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}">
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize-opentype.css"}}">
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}">
-    <script type="text/javascript" src="{{asset "js/jquery.min.js"}}"></script>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -45,7 +44,9 @@
 	{{foot}}
     </div> <!-- #wrapper -->
 
-    
+    {{! jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection }}
+    <script type="text/javascript" src="{{asset "js/jquery.min.js"}}"></script>
+    {{! Ghost outputs important scripts and data with this tag }}    
     {{ghost_foot}}
 
     <footer id="foot">
@@ -55,6 +56,8 @@
     {{! Bonus scripts }}
     {{! Nice little script to hide/show top bar on scroll }}
     <script type="text/javascript" src="{{asset "js/scroll-up-bar.js"}}"></script>
+    {{! Main JavaScript file }}    
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>
 </html>
