@@ -11,3 +11,8 @@ $(function(){
     }
   });
 });
+
+/* Responsive videos */
+$(document).ready(function(){
+    $("#post").fitVids();
+});
