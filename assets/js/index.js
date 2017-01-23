@@ -1,9 +1,13 @@
-jQuery(function($) {
-/* Invoke ScrollUpBar Plugin
-   FIXME: Does it even work?
-   1. TypeError: $(...).scrollupbar is not a function
-   2. When loaded, topbar background won't change it color
-*/
-// $('#topbar').scrollupbar();
+/* Invoke ScrollUpBar Plugin */
+$('#topbar').scrollupbar();
 
+$(function(){
+  $(window).scroll(function()
+  {
+    $("#topbar").removeClass("topped").addClass("scrolled");
+    var divTop = $('#topbar').height();
+    if($(this).scrollTop()<=divTop) {
+        $("#topbar").removeClass("scrolled").addClass("topped");
+    }
+  });
 });
