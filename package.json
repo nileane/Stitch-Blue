@@ -1,4 +1,15 @@
 {
-  "name": "Stitch Blue",
-  "version": "0.9"
+    "name": "Stitch Blue",
+    "description": "A nice and elegant theme inspired by the color Stitch blue",
+    "version": "0.9.1",
+    "license": "MIT",
+    "author": {
+        "name": "Niléane",
+        "email": "contact@nildeala.fr",
+        "url": "https://nildeala.fr"
+    },
+    "config": {
+        "posts_per_page": 10
+    },
+    "homepage": "https://github.com/Nildeala/Stitch-Blue"
 }

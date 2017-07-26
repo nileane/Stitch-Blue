@@ -6,8 +6,8 @@
 {{! Everything inside the #post tags pulls data from the page }}
 {{#post}}
 
-{{#if image}}
-    <header class="big cover" style="background-image: url({{image}})">
+{{#if feature_image}}
+    <header class="big cover" style="background-image: url({{img_url feature_image}})">
 {{else}}
     <header class="big cover shrunk default-cover">
 {{/if}}
