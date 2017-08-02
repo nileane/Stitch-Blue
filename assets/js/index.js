@@ -16,3 +16,13 @@ $(function(){
 $(document).ready(function(){
     $("#post").fitVids();
 });
+
+/* Search with ghostHunter */
+$("#search-field").ghostHunter({
+    results		: "#search-results",
+    includepages 	: true,
+    onKeyUp 		: true,
+    onPageLoad 		: true,
+    displaySearchInfo	: false,
+    result_template	: "<a href='{{link}}'><li>{{title}}</li></a>"
+});
