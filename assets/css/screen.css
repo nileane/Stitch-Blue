@@ -269,9 +269,7 @@ Head & Navigation */
 #nav .subnav a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
-.results-hide{
-    display: none;
-}
+
 .author-h {
     -webkit-animation: slider 1.2s 1;
             animation: slider .8s 1;
