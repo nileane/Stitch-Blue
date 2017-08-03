@@ -4,31 +4,16 @@
 			<a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}"><span>{{label}}</span></a>
 		{{/foreach}}
 
-        <span class="subnav-title" href="#">Campus <span class="oi" data-glyph="caret-bottom"></span>
+        <!-- <span class="subnav-title" href="#">Que lire ? <span class="oi" data-glyph="caret-bottom"></span>
             <div class="subnav">
-                <a href="{{@blog.url}}/tag/ulb"><span>ULB</span></a>
-                <a href="{{@blog.url}}/tag/ucl"><span>UCL</span></a>
-                <a href="{{@blog.url}}/tag/cardijn"><span>Cardijn</span></a>
-                <a href="{{@blog.url}}/tag/helb"><span>HELB</span></a>
-                <a href="{{@blog.url}}/tag/heff"><span>Francisco Ferrer</span></a>
+                <a href="#"><span>idées</span></a>
+                <a href="#"><span>humeurs</span></a>
+                <a href="#"><span>fictions</span></a>
+                <a href="#"><span>divertissement</span></a>
+                <a href="#"><span>inclassable</span></a>
             </div>
-        </span>
-
-        <span class="subnav-title" href="#">Presse <span class="oi" data-glyph="caret-bottom"></span>
-            <div class="subnav">
-                <a href="{{@blog.url}}/tag/communique"><span>Communiqués de presse</span></a>
-                <a href="{{@blog.url}}/tag/revue"><span>Revues de presse</span></a>
-            </div>
-        </span>
-
-        <span class="subnav-title" href="#">Textes <span class="oi" data-glyph="caret-bottom"></span>
-            <div class="subnav">
-                <a href="https://public.use.be/Statuts%20et%20charte/"><span>Statuts et charte</span></a>
-                <a href="{{@blog.url}}/tag/cahier-de-revendications"><span>Cahier de revendications</span></a>
-            </div>
-        </span>
-
-        <a href="{{@blog.url}}/ghost/" title="Administration"><span class="oi" data-glyph="pencil"></span></a>
+        </span> -->
+        <a href="{{@blog.url}}/ghost/" title="Admin/Rédaction"><span class="oi" data-glyph="pencil"></span></a>
 	</div>
     
 	<select class="custom nolabel mobileon" name="Menu" onchange="location = this.options[this.selectedIndex].value;">
