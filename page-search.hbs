@@ -16,9 +16,11 @@
 
 <div id="wrapper">
 <section class="article {{post_class}}">
-        <form>
-            <input id="search-field" placeholder="Tapez pour débuter une recherche" />
-        </form>
-        <div id="search-results"></div>
+    <form class="search-box">
+            <span class="oi search-icon" data-glyph="magnifying-glass" aria-hidden="true"></span>
+            <input type="search" autocomplete="off" autofocus="on" id="search-field" placeholder="..." />
+    </form>
+
+    <div id="search-results"></div>
 </section>
 {{/post}}
