@@ -24,5 +24,5 @@ $("#search-field").ghostHunter({
     onKeyUp 		: true,
     onPageLoad 		: true,
     info_template	: "<p>{{amount}} article(s) trouvé(s)</p>",
-    result_template	: "<a href='{{link}}'>{{title}}</a><br/>"
+    result_template	: "<a href='{{link}}'><p>{{title}}</p></a>"
 });
