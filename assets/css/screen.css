@@ -71,7 +71,7 @@ section.dark {
 .home-template #wrapper,
 .author-template #wrapper,
 .tag-template #wrapper,
-.archive-template #wrapper {
+.paged #wrapper {
     max-width: 1200px;
 }
 #wrapper > * {
@@ -525,6 +525,7 @@ header .meta {
 .post-meta span,
 .meta span {
     display: inline-block;
+    padding-left: 0.5em;
 }
 .meta .small {
     text-transform: none;
@@ -639,7 +640,7 @@ header.big.default-cover {
     box-shadow: none;
 }
 .home-template header.big,
-.archive-template header.big,
+.paged header.big,
 .tag-template header.big,
 header.big.author {
     text-align: center;
