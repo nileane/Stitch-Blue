@@ -1,8 +1,8 @@
 <nav id="nav">
-	<div class="mobileoff">
-		{{#foreach navigation}}
-			<a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}"><span>{{label}}</span></a>
-		{{/foreach}}
+    <div class="mobileoff">
+        {{#foreach navigation}}
+            <a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}"><span>{{label}}</span></a>
+        {{/foreach}}
 
         <!-- <span class="subnav-title" href="#">Que lire ? <span class="oi" data-glyph="caret-bottom"></span>
             <div class="subnav">
@@ -14,12 +14,12 @@
             </div>
         </span> -->
         <a href="{{@blog.url}}/ghost/" title="Admin/Rédaction"><span class="oi" data-glyph="pencil"></span></a>
-	</div>
+    </div>
     
-	<select class="custom nolabel mobileon" name="Menu" onchange="location = this.options[this.selectedIndex].value;">
-		<option value="#" selected="selected">Menu</option>
-		{{#foreach navigation}}
-			<option value="{{url absolute="true"}}">{{label}}</option>
-		{{/foreach}}
-	</select>
+    <select class="custom nolabel mobileon" name="Menu" onchange="location = this.options[this.selectedIndex].value;">
+        <option value="#" selected="selected">Menu</option>
+        {{#foreach navigation}}
+            <option value="{{url absolute="true"}}">{{label}}</option>
+        {{/foreach}}
+    </select>
 </nav>
