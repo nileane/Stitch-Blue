@@ -2,7 +2,7 @@
 Fonts */
 @import url('/assets/fonts/Fira/fira.css');
 @import url('/assets/fonts/Merriweather/merriweather.css');
-@import url('/assets/fonts/openiconic/css/open-iconic.css');
+@import url('/assets/fonts/font-awesome/css/font-awesome.min.css');
 @import url('/assets/fonts/charissil/charissil.css');
 input,
 textarea,
@@ -249,7 +249,7 @@ Head & Navigation */
     overflow: hidden;
     pointer-events: none;
 }
-#nav .subnav-title .oi {
+#nav .subnav-title .fa {
     position: absolute;
         left: 0;
         right: 0;
