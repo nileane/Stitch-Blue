@@ -26,3 +26,19 @@ $("#search-field").ghostHunter({
     info_template	: "<p>{{amount}} article(s) trouvé(s)</p>",
     result_template	: "<a href='{{link}}'><p>{{title}}</p></a>"
 });
+
+/* Creates Captions from Alt tags */
+$(".post img").each(
+    function() {
+        // Let's put a caption if there is one
+        if ($(this).attr("alt")) {
+            $(this).wrap(
+                '<figure class="image"></figure>'
+            ).after(
+                '<figcaption>' +
+                $(this).attr(
+                    "alt") +
+                '</figcaption>'
+            );
+        }
+    });
