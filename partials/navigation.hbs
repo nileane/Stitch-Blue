@@ -1,4 +1,4 @@
-<nav id="nav">
+	<nav id="nav">
 	<div class="mobileoff">
 		{{#foreach navigation}}
 			<a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}"><span>{{label}}</span></a>
@@ -13,6 +13,7 @@
                 <a href="#"><span>inclassable</span></a>
             </div>
         </span> -->
+        <a href="{{@blog.url}}/search" title="Recherche"><span class="oi" data-glyph="magnifying-glass" aria-hidden="true"></span></a>
         <a href="{{@blog.url}}/ghost/" title="Admin/Rédaction"><span class="oi" data-glyph="pencil"></span></a>
 	</div>
     
