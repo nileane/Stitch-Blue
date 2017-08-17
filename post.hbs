@@ -11,9 +11,14 @@
         <div class="post-meta meta">
             <div>
                 {{#author}}
-                <a href="{{url}}">
-                {{#if profile_image}}<div class="author-thumb" style="background-image:url({{img_url profile_image}});" alt="{{name}}'s picture" nopin="nopin"></div>{{/if}}
-                <span>{{name}}</span></a>
+                    <a href="{{url}}">
+                        {{#if profile_image}}
+                            <div class="author-thumb" style="background-image:url({{img_url profile_image}});" alt="{{name}}'s picture" nopin="nopin"></div>
+                        {{else}}
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        {{/if}}
+                        <span>{{name}}</span>
+                    </a>
                 {{/author}}
                 <span><i class="fa fa-calendar" aria-hidden="true"></i> {{date format="DD MMMM YYYY"}}</span>
                 {{#if tags}}
