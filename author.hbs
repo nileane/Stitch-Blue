@@ -2,7 +2,7 @@
 
 {{#author}}
     <header class="big author {{#if cover_image}}cover" style="background-image: url({{cover_image}});"{{else}}cover default-cover"{{/if}}>
-	    <h1>
+        <h1>
             {{#if profile_image}}
             <figure class="author-image">
                 <div class="img" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s picture</span></div>
@@ -11,10 +11,10 @@
 
             {{name}}
         </h1>
-	    <div>
-		{{#if bio}}
-		    <div class="meta-description">{{bio}}</div>
-		{{/if}}
+        <div>
+        {{#if bio}}
+            <div class="meta-description">{{bio}}</div>
+        {{/if}}
             <div class="meta">
                 {{#if location}}<span class="author-location icon-location"><a title="Voir sur OpenStreetMap" href="http://nominatim.openstreetmap.org/search.php?q={{location}}"><i class="fa fa-map-marker" aria-hidden="true"></i> {{location}}</a></span>{{/if}}
                 <span><i class="fa fa-pencil" aria-hidden="true"></i> {{plural ../pagination.total empty='N\'a publié aucun article' singular='% article' plural='% articles'}}</span>

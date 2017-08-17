@@ -34,8 +34,8 @@
 
   {{#foreach posts}}
     {{#unless featured}}
-	<section class="recent card {{post_class}} {{#if @even}}even{{else}}odd{{/if}}">
-		<a href="{{url}}">
+    <section class="recent card {{post_class}} {{#if @even}}even{{else}}odd{{/if}}">
+        <a href="{{url}}">
             <h2 class="post-title">{{{title}}}</h2>
             <div class="post-excerpt">
                 {{#if meta_description}}
@@ -45,20 +45,20 @@
                 {{/if}}
             </div>
         </a>
-		<footer class="post-meta">
-			{{#is "home, tag, paged"}}
-			{{#author}}
-			<a href="{{url}}">
-			{{#if profile_image}}<div class="author-thumb" style="background-image:url({{img_url profile_image}});" alt="{{name}}'s picture" nopin="nopin"></div>{{/if}}
-			<span style="color:rgba(51, 51, 51, 0.8)">{{name}}</span></a> ·
-			{{/author}}
-			{{/is}} 
-			<span>{{date format="DD MMMM YYYY"}}</span>
+        <footer class="post-meta">
+            {{#is "home, tag, paged"}}
+            {{#author}}
+            <a href="{{url}}">
+            {{#if profile_image}}<div class="author-thumb" style="background-image:url({{img_url profile_image}});" alt="{{name}}'s picture" nopin="nopin"></div>{{/if}}
+            <span style="color:rgba(51, 51, 51, 0.8)">{{name}}</span></a> ·
+            {{/author}}
+            {{/is}} 
+            <span>{{date format="DD MMMM YYYY"}}</span>
             {{#if tags}}
             <span class="tags"><i class="fa fa-tags" aria-hidden="true"></i> {{tags}}</span>
             {{/if}}
-		</footer>
-	</section>
+        </footer>
+    </section>
     {{/unless}}
   {{/foreach}}
 
