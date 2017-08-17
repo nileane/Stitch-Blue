@@ -2,7 +2,7 @@
 Fonts */
 @import url('/assets/fonts/Fira/fira.css');
 @import url('/assets/fonts/Merriweather/merriweather.css');
-@import url('/assets/fonts/openiconic/css/open-iconic.css');
+@import url('/assets/fonts/font-awesome/css/font-awesome.min.css');
 @import url('/assets/fonts/charissil/charissil.css');
 input,
 textarea,
@@ -249,7 +249,7 @@ Head & Navigation */
     overflow: hidden;
     pointer-events: none;
 }
-#nav .subnav-title .oi {
+#nav .subnav-title .fa {
     position: absolute;
         left: 0;
         right: 0;
@@ -503,7 +503,7 @@ section.card:last-of-type {
 .featured-label {
     color: rgba(170, 170, 170, 0.8);
 }
-.featured-label .oi {
+.featured-label .fa {
         -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -544,17 +544,17 @@ header .meta a:not(.info) {
 header .post-meta .tags a {
     color: rgba(170, 170, 170, 0.5);
 }
-.meta .oi,
-.post-meta .oi {
+.meta .fa,
+.post-meta .fa {
     font-size: 120%;
     line-height: 1;
 }
-section.card .post-meta .oi {
+section.card .post-meta .fa {
     color: rgba(170, 170, 170, 0.8);
     margin: 0 .5em;
     float: left;
 }
-header.big .meta .oi {
+header.big .meta .fa {
     vertical-align: top;
     color: #FFF;
     margin-left: 0.8em;
@@ -727,6 +727,12 @@ iframe {
 #post a img {
     border: 0 none;
 }
+.post figcaption {
+    font-style: italic;
+    font-size: 85%;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
 blockquote {
     font-style: italic;
     margin: 22px 0;
@@ -799,7 +805,7 @@ blockquote {
     vertical-align: middle;
     font-size: 13px;
 }
-.info .oi {
+.info .fa {
     margin: 0 !important;
     line-height: 30px;
     font-size: 100%;
