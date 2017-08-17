@@ -22,24 +22,24 @@
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-	<div id="topbar" class="nav">
-		<div id="head">
+    <div id="topbar" class="nav">
+        <div id="head">
             {{^is "home"}}
-		    <a href="/">
+            <a href="/">
                {{#if @blog.logo}}
                 <img class="logo" src="{{@blog.logo}}" alt="Logo">
                {{/if}}
                 <span class="nav-head">{{@blog.title}}</span>
-		    </a>
+            </a>
             {{/is}}
-		</div>
-		{{ navigation }}  
-	</div>
+        </div>
+        {{ navigation }}  
+    </div>
 
         {{! Everything else gets inserted here }}
         {{{body}}}
 
-	{{foot}}
+    {{foot}}
     </div> <!-- #wrapper -->
 
     {{! jQuery needs to come before ghost_foot so that jQuery can be used in code injection }}

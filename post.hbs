@@ -7,22 +7,22 @@
 {{else}}
     <header class="big cover shrunk default-cover">
 {{/if}}
-	<h1 class="post-title" style="text-align:left">{{title}}</h1>
-		<div class="post-meta meta">
+    <h1 class="post-title" style="text-align:left">{{title}}</h1>
+        <div class="post-meta meta">
             <div>
                 <span>{{date format="DD MMMM YYYY"}}</span>
                 {{#if tags}}
                 <span class="tags"><i class="fa fa-tags" aria-hidden="true"></i> {{tags}}</span>
                 {{/if}}
             </div>
-		</div>
+        </div>
 </header>
 
 <div id="wrapper">
 <section class="article {{post_class}}">
-	<div id="post">
-	    {{content}}
-	</div>
+    <div id="post">
+        {{content}}
+    </div>
 </section>
 
 {{/post}}
