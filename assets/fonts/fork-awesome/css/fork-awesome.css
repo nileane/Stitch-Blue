@@ -1,19 +1,19 @@
 /*!
- *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ *  Fork Awesome 1.0.3, originaly by Dave Gandy - http://forkawesome.github.com/Fork-Awesome/
+ *  License - http://forkawesome.github.com/Fork-Awesome//license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-family: 'ForkAwesome';
+  src: url('../fonts/forkawesome-webfont.eot?v=1.0.3');
+  src: url('../fonts/forkawesome-webfont.eot?#iefix&v=1.0.3') format('embedded-opentype'), url('../fonts/forkawesome-webfont.woff2?v=1.0.3') format('woff2'), url('../fonts/forkawesome-webfont.woff?v=1.0.3') format('woff'), url('../fonts/forkawesome-webfont.ttf?v=1.0.3') format('truetype'), url('../fonts/forkawesome-webfont.svg?v=1.0.3#forkawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 ForkAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -61,7 +61,7 @@
 }
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #eee;
   border-radius: .1em;
 }
 .fa-pull-left {
@@ -176,9 +176,9 @@
   font-size: 2em;
 }
 .fa-inverse {
-  color: #ffffff;
+  color: #fff;
 }
-/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+/* Fork Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 .fa-glass:before {
   content: "\f000";
@@ -698,6 +698,7 @@
 .fa-arrows-alt:before {
   content: "\f0b2";
 }
+.fa-community:before,
 .fa-group:before,
 .fa-users:before {
   content: "\f0c0";
@@ -1382,12 +1383,6 @@
 }
 .fa-digg:before {
   content: "\f1a6";
-}
-.fa-pied-piper-pp:before {
-  content: "\f1a7";
-}
-.fa-pied-piper-alt:before {
-  content: "\f1a8";
 }
 .fa-drupal:before {
   content: "\f1a9";
@@ -2159,9 +2154,6 @@
 .fa-snapchat-square:before {
   content: "\f2ad";
 }
-.fa-pied-piper:before {
-  content: "\f2ae";
-}
 .fa-first-order:before {
   content: "\f2b0";
 }
@@ -2315,6 +2307,47 @@
 }
 .fa-meetup:before {
   content: "\f2e0";
+}
+.fa-mastodon:before {
+  content: "\f2e1";
+}
+.fa-mastodon-alt:before {
+  content: "\f2e2";
+}
+.fa-fork-circle:before,
+.fa-fork-awesome:before {
+  content: "\f2e3";
+}
+.fa-peertube:before {
+  content: "\f2e4";
+}
+.fa-diaspora:before {
+  content: "\f2e5";
+}
+.fa-friendica:before {
+  content: "\f2e6";
+}
+.fa-gnu-social:before {
+  content: "\f2e7";
+}
+.fa-liberapay-square:before {
+  content: "\f2e8";
+}
+.fa-liberapay:before {
+  content: "\f2e9";
+}
+.fa-ssb:before,
+.fa-scuttlebutt:before {
+  content: "\f2ea";
+}
+.fa-hubzilla:before {
+  content: "\f2eb";
+}
+.fa-social-home:before {
+  content: "\f2ec";
+}
+.fa-artstation:before {
+  content: "\f2ed";
 }
 .sr-only {
   position: absolute;
