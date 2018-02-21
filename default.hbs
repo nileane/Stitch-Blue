@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 <head>
     {{! Document Settings }}
     <meta charset="utf-8" />
@@ -38,8 +38,7 @@
 
         {{! Everything else gets inserted here }}
         {{{body}}}
-
-    {{foot}}
+        {{foot}}
     </div> <!-- #wrapper -->
 
     {{! jQuery needs to come before ghost_foot so that jQuery can be used in code injection }}
@@ -48,7 +47,7 @@
     {{ghost_foot}}
 
     <footer id="foot">
-        <strong>{{@blog.title}}</strong> · Powered by Ghost · Theme is <a href="https://github.com/Nildeala/Stitch-Blue"><strong>Stitch Blue</strong></a>, by Nildëala.
+        <strong>{{@blog.title}}</strong> · {{{t "Published with {ghostlink}" ghostlink="<a href=\"https://ghost.org\">Ghost</a>"}}} · {{t "Theme is"}} <a href="https://github.com/Nildeala/Stitch-Blue"><strong>Stitch Blue</strong></a>, {{t "by"}} Nildëala.
     </footer>
     
     {{! Bonus scripts }}

@@ -2,7 +2,7 @@
 Fonts */
 @import url('/assets/fonts/Fira/fira.css');
 @import url('/assets/fonts/Merriweather/merriweather.css');
-@import url('/assets/fonts/font-awesome/css/font-awesome.min.css');
+@import url('/assets/fonts/fork-awesome/css/fork-awesome.min.css');
 @import url('/assets/fonts/charissil/charissil.css');
 input,
 textarea,
@@ -290,6 +290,10 @@ Head & Navigation */
 }
 section.card .post-meta .author-thumb {
     margin-left: 0;
+    margin-right: 0.5em;
+}
+header.big .meta .author-thumb {
+    margin-right: 0.2em;
 }
 .author-image {
     padding: 0;
@@ -525,7 +529,6 @@ header .meta {
 .post-meta span,
 .meta span {
     display: inline-block;
-    padding-left: 0.5em;
 }
 .meta .small {
     text-transform: none;

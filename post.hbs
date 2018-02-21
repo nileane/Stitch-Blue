@@ -10,7 +10,17 @@
     <h1 class="post-title" style="text-align:left">{{title}}</h1>
         <div class="post-meta meta">
             <div>
-                <span>{{date format="DD MMMM YYYY"}}</span>
+                {{#author}}
+                    <a href="{{url}}">
+                        {{#if profile_image}}
+                            <div class="author-thumb" style="background-image:url({{img_url profile_image}});" alt="{{name}}'s picture" nopin="nopin"></div>
+                        {{else}}
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        {{/if}}
+                        <span>{{name}}</span>
+                    </a>
+                {{/author}}
+                <span><i class="fa fa-calendar" aria-hidden="true"></i> {{date format="DD MMMM YYYY"}}</span>
                 {{#if tags}}
                 <span class="tags"><i class="fa fa-tags" aria-hidden="true"></i> {{tags}}</span>
                 {{/if}}
