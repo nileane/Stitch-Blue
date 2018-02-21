@@ -24,7 +24,7 @@ $("#search-field").ghostHunter({
     onKeyUp 		: true,
     onPageLoad		: true,
     info_template	: "<p>{{amount}} article(s) trouvé(s)</p>",
-    result_template	: "<a href='{{link}}'><p>{{title}}</p></a>"
+    result_template	: "<a id='gh-{{ref}}' class='gh-search-item' href='{{link}}'><p>{{title}}</p></a>"
 });
 
 /* Creates Captions from Alt tags */
