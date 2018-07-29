@@ -1,9 +1,13 @@
 # Fork Awesome
 ### A fork of the iconic font and CSS toolkit
 
-Fork Awesome is a full suite of 705 pictographic icons for easy scalable vector graphics on websites, originally created by [Dave Gandy](https://twitter.com/davegandy) and now maintained by a community.
+[![All Contributors](https://img.shields.io/badge/all_contributors-98-orange.svg?style=flat-square)](CONTRIBUTORS.md)
+[![JSDeliver](https://data.jsdelivr.com/v1/package/npm/fork-awesome/badge)](https://www.jsdelivr.com/package/npm/fork-awesome)
+[![CDNJS](https://img.shields.io/cdnjs/v/fork-awesome.svg?style=flat-square)](https://cdnjs.com/libraries/fork-awesome)
 
-Following concerns regarding [the development of Font Awesome](https://github.com/FortAwesome/Font-Awesome/issues/12199#issuecomment-362919956), the PR Freeze since Oct 2016 and the direction Fort Awesome is taking with the version 5.0 of their project, we are forking Font Awesome (4.7), in order to build on this incredible tool Dave Gandy has given us, while at the same time allowing this project to be run by a distributed community of contributors.
+Fork Awesome is a full suite of 718 pictographic icons for easy scalable vector graphics on websites, originally created by [Dave Gandy](https://twitter.com/davegandy) and now maintained by a community.
+
+Following concerns regarding [the development of Font Awesome](https://github.com/FortAwesome/Font-Awesome/issues/12199#issuecomment-362919956), the PR Freeze since Oct 2016 and the direction [Fort Awesome](https://fortawesome.com/) is taking with the version 5.0 of their project, we are forking Font Awesome (4.7), in order to build on this incredible tool Dave Gandy has given us, while at the same time allowing this project to be run by a distributed community of contributors.
 
 A tremendous gratitude is given to the whole team behind [Font Awesome](https://fontawesome.com), and you are encouraged to support them and buy Font Awesome Pro for your project.
 
@@ -25,6 +29,8 @@ There is a full page in our documentation website that explains [how to use Fork
 Please read through our [contributing guidelines](https://github.com/ForkAwesome/Fork-Awesome/blob/master/CONTRIBUTING.md).
 Included are directions for opening issues, coding standards, and notes on development.
 
+We also take great pride in recognizing any contributions made to this project. Whether you've written a blogpost about it, fixed a typo in the documentation or submitted new icons or code patches, we will happily list you in our [contributors list](CONTRIBUTORS.md).
+
 ## Versioning
 
 Fork Awesome will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered
@@ -42,9 +48,6 @@ And constructed with the following guidelines:
 
 For more information on SemVer, please visit http://semver.org.
 
-## Original author of Font Awesome:
-- [Dave Gandy](https://github.com/davegandy)
-
 ## Component
 To include as a [component](https://github.com/componentjs/component), just run
 
@@ -56,7 +59,7 @@ Or add
 
 to the `dependencies` in your `component.json`.
 
-## Building on Fork Awesome
+## Building Fork Awesome
 
 **Before you can build the project**, you must first have the following installed:
 
@@ -64,6 +67,7 @@ to the `dependencies` in your `component.json`.
 - Ruby Development Headers
   - **Ubuntu:** `sudo apt-get install ruby-dev` *(Only if you're __NOT__ using `rbenv` or `rvm`)*
   - **Windows:** [DevKit](http://rubyinstaller.org/)
+  - **macOS:** no extra step required
 - [Bundler](http://bundler.io/) (Run `gem install bundler` to install).
 - [Node Package Manager (aka. `npm`)](https://docs.npmjs.com/getting-started/installing-node)
 
@@ -80,14 +84,10 @@ Build the web documentation:
 
     $ npm run build
 
-Or serve it on a local server on http://localhost:7998/Fork-Awesome/:
+Or serve it on a local server on http://localhost:7998:
 
     $ npm run dev
 
 To deploy the project and documentation on GH pages:
 
     $ jgd -n
-
-## Badges
-
-[![](https://data.jsdelivr.com/v1/package/npm/fork-awesome/badge)](https://www.jsdelivr.com/package/npm/fork-awesome)
