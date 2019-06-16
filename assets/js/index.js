@@ -17,6 +17,15 @@ $(document).ready(function(){
     $("#post").fitVids();
 });
 
+/* Search with ghostHunter */
+$("#search-field").ghostHunter({
+    results		: "#search-results",
+    onKeyUp 		: true,
+    includebodysearch   : true,
+    info_template	: "<p>{{amount}} article(s) trouvé(s)</p>",
+    result_template	: "<a id='gh-{{ref}}' class='gh-search-item' href='{{link}}'><p>{{title}}</p></a>"
+});
+
 /* Creates Captions from Alt tags */
 $(".post img").each(
     function() {
