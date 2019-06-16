@@ -1,6 +1,28 @@
 # Changelog
 
 ## Changelog of Fork awesome
+- v1.1.6
+  - Added icons: file-epub, python, archlinux, pleroma, unsplash, hackster, spell-check, moon, sun, f-droid, and biometric
+  - Some documentation correction and augmentation, mostly in the README
+  - Gave access to the @all-contributors [bot] to the repo for easier contributor list management
+  - Added a plugin to automatically update the Contributors badge when building the documentation
+  - Added an official domain name for the project: https://forkaweso.me
+- v1.1.5
+  - Just bumped the version number to trigger an automated deploy
+- v1.1.4
+  - Added icons: Gitea, AT&T, Digitalocean, C (language), Wikidata, Emby, Jirafeau, Hashnode, DevTo, Pixelfed, Matrix, Inkscape, Syncthing.
+- v1.1.3
+  - Added icons: Syncthing and Inkscape
+  - Fixed sizing with PHP icon
+  - Added the `sync` alias to the refresh icon
+- v1.1.2
+  - Adds a `v5-compat.css` file in order to ease transition from Font Awesome v5 to Frok Awesome [#112](https://github.com/ForkAwesome/Fork-Awesome/issues/112)
+  - Adds full MIT license in the CSS, LESS and SCSS headers [#113](https://github.com/ForkAwesome/Fork-Awesome/issues/113)
+  - Ignoring some unnecessary files that were distributed with the CDN
+- v1.1.1
+  - Adding a CI pipeline with Travis.
+  - Fixes bell and bell-o icons who were switched up [#88](https://github.com/ForkAwesome/Fork-Awesome/issues/88)
+  - Add a mention in the documentation that the SIL-OFL also applies to SVG glyphs [#62](https://github.com/ForkAwesome/Fork-Awesome/issues/62)
 - v1.1.0
   - Upgrade of build tools to latest versions ( Jekyll & svgo mainly)
   - Change of Globe icon to be more world friendly
