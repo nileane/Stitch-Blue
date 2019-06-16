@@ -17,7 +17,7 @@
                 </div>
             </a>
             <footer class="post-meta">
-                {{#author}}
+                {{#primary_author}}
                     <a href="{{url}}">
                         {{#if profile_image}}
                             <div class="author-thumb" style="background-image:url({{img_url profile_image}});" alt="{{name}}'s picture" nopin="nopin"></div>
@@ -26,7 +26,7 @@
                         {{/if}}
                         <span>{{name}}</span>
                     </a>
-                {{/author}}
+                {{/primary_author}}
                 <span><i class="fa fa-calendar" aria-hidden="true"></i> {{date format="DD MMMM YYYY"}}</span>
                 {{#if tags}}
                 <span class="tags"><i class="fa fa-tags" aria-hidden="true"></i> {{tags}}</span>
@@ -52,7 +52,7 @@
         </a>
         <footer class="post-meta">
             {{#is "home, tag, paged"}}
-            {{#author}}
+            {{#primary_author}}
                 <a href="{{url}}">
                     {{#if profile_image}}
                         <div class="author-thumb" style="background-image:url({{img_url profile_image}});" alt="{{name}}'s picture" nopin="nopin"></div>
@@ -61,7 +61,7 @@
                     {{/if}}
                     <span>{{name}}</span>
                 </a>
-            {{/author}}
+            {{/primary_author}}
             {{/is}} 
             <span><i class="fa fa-calendar" aria-hidden="true"></i> {{date format="DD MMMM YYYY"}}</span>
             {{#if tags}}
