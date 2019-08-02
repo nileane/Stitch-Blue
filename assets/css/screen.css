@@ -111,6 +111,12 @@ pre code {
            box-shadow: 0 0;
    padding: 0;
 }
+mark {
+    background-color: #FFEB3B;
+    color: #37474F;
+    border-radius: 2px;
+    padding: 2px;
+}
 hr {
    border-top: 2px solid #DEDEDC;
    border-bottom: 0;
