@@ -777,6 +777,9 @@ blockquote {
 .footnotes ol {
     padding: 0;
 }
+section.footnotes {
+    box-shadow: none;
+}
 .pagination {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
