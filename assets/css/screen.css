@@ -113,6 +113,12 @@ pre code {
            box-shadow: 0 0;
    padding: 0;
 }
+mark {
+    background-color: #FFEB3B;
+    color: #37474F;
+    border-radius: 2px;
+    padding: 2px;
+}
 hr {
    border-top: 2px solid #DEDEDC;
    border-bottom: 0;
@@ -773,6 +779,9 @@ blockquote {
 .footnotes ol {
     padding: 0;
 }
+section.footnotes {
+    box-shadow: none;
+}
 .pagination {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -980,4 +989,26 @@ blockquote {
 @-webkit-keyframes slidedown {
     0% { -webkit-transform: translate(0, -60px); opacity: 0; }
     100% { -webkit-transform: translate(0, 0); opacity: 1; }
+}
+
+/* ----------------------------------------
+customised /search output */
+
+.search-box {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.search-box input#search-field {
+    width: 100%;
+    height: 50px;
+    background-color: #E0E0E0;
+    border: none;
+    text-indent: 45px;
+    border-radius: 5px;
+}
+.search-icon {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
 }
