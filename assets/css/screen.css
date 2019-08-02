@@ -868,7 +868,7 @@ section.footnotes {
             flex: 1 1 37%;
         padding-left: 10% !important;
         padding-right: 2% !important;
-        background-color: rgba(238, 238, 238, 0.05);
+        background-color: rgba(0, 0, 0, 0.05);
     }
     section.recent:nth-child(3),
     section.recent:nth-child(6),
@@ -879,7 +879,7 @@ section.footnotes {
         font-size: 75%;
         padding-left: 2% !important;
         padding-right: 10% !important;
-        background-color: rgba(238, 238, 238, 0.05);
+        background-color: rgba(0, 0, 0, 0.05);
         margin-bottom: 1.5em;
     }
     header.big .meta {
