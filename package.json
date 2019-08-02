@@ -1,12 +1,12 @@
 {
-    "name": "stitch-blue",
+    "name": "stitch-use",
     "description": "A nice and elegant theme inspired by the color Stitch blue",
     "version": "0.9.3",
     "license": "MIT",
     "author": {
-        "name": "Niléane",
-        "email": "contact@nildeala.fr",
-        "url": "https://nildeala.fr"
+        "name": "Guillaume Hayot",
+        "email": "ghayot@postblue.info",
+        "url": "https://postblue.info"
     },
     "config": {
         "posts_per_page": 10

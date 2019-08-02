@@ -1,0 +1,29 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+{{#if feature_image}}
+    <header class="big cover" style="background-image: url({{img_url feature_image}})">
+{{else}}
+    <header class="big cover shrunk default-cover">
+{{/if}}
+	<h1 class="post-title" style="text-align:center">{{title}}</h1>
+</header>
+
+<div id="wrapper">
+<section class="article {{post_class}}">
+	<div id="post">
+	    {{content}}
+	</div>
+	<div id="form">
+                <!-- www.123contactform.com script begins here -->
+                <script type="text/javascript" defer src="//www.123contactform.com/embed/2010930.js" data-role="form"></script>
+                <!-- www.123contactform.com script ends here -->
+	</div>
+</section>
+
+{{/post}}

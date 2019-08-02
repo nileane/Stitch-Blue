@@ -4,15 +4,9 @@
             <a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}"><span>{{label}}</span></a>
         {{/foreach}}
 
-        <!-- <span class="subnav-title" href="#">Que lire ? <i class="fa fa-caret-down" aria-hidden="true"></i>
-            <div class="subnav">
-                <a href="#"><span>idées</span></a>
-                <a href="#"><span>humeurs</span></a>
-                <a href="#"><span>fictions</span></a>
-                <a href="#"><span>divertissement</span></a>
-                <a href="#"><span>inclassable</span></a>
-            </div>
-        </span> -->
+        <a href="{{twitter_url @blog.twitter}}" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="{{facebook_url @blog.facebook}}" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="{{@blog.url}}/agenda/" title="Agenda"><i class="fa fa-calendar" aria-hidden="true"></i></a>
         <a href="{{@blog.url}}/ghost/" title="Admin/Rédaction"><i class="fa fa-pencil" aria-hidden="true"></i></a>
         <a href="{{@blog.url}}/search/" title="Recherche"><i class="fa fa-search" aria-hidden="true"></i></a>
     </div>
